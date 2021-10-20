@@ -51,6 +51,69 @@ body {
     background-color: #04AA6D;
     color: white;
 }
+.galleryslides {
+    box-sizing: border-box;
+    position: relative;
+    background-color: black;
+}
+.slides {
+    display: none;
+}
+.cursor {
+    cursor: pointer;
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+    background-color: rgb(245, 98, 98);
+}
+.numbertext {
+    color: tomato;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column {
+    float: left;
+    width: 16.66%;
+}
+.demo {
+    opacity: 0.6;
+}
+.active,
+.demo:hover {
+    opacity: 1;
+}
 #contact {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
@@ -58,7 +121,7 @@ body {
     gap: 0px 0px; 
     grid-template-areas: 
       "header header header header header"
-      ". companyname companyadress companymap .";
+      "companyname companyadress companymap";
     background-color: rgb(24, 20, 20);
     justify-content: center;
     align-content: center; 
