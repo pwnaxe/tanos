@@ -34,7 +34,7 @@ body {
 #navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -50,4 +50,38 @@ body {
 #navbar a.active {
     background-color: #04AA6D;
     color: white;
-  }
+}
+#contact {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "header header header header header"
+      ". companyname companyadress companymap .";
+    background-color: rgb(24, 20, 20);
+    justify-content: center;
+    align-content: center; 
+    justify-items: stretch; 
+    align-items: stretch; 
+}
+h2 {
+    color: rgb(219, 197, 0);
+}
+#map {
+    height: 200px;
+    width: 20px;
+}
+#headercontact {
+    grid-template-areas: header;
+    background-color: rgb(219, 197, 0);
+}
+#companyname {
+    grid-template-areas: companyname;
+}
+#companyadress {
+    grid-template-areas: companyadress;
+}
+#companymap {
+    grid-template-areas: companymap;
+}
