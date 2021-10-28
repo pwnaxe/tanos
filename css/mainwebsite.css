@@ -27,20 +27,21 @@ body {
     min-height: 100%;
     text-align: left;
 }
-#navbar {
+nav {
     position: fixed;
     top: 0;
     text-align: center;
     width: 100%;
     overflow: hidden;
-    background-color: #333;
     z-index: 100;
 }
-#navbar a {
-    display: inline-block;
-    color: #ffffff;
-    padding: 14px 16px;
-    text-decoration: none;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
 }
 .sticky {
     position: fixed;
@@ -50,72 +51,9 @@ body {
 .sticky + .content {
     padding-top: 10px;
 }
-#navbar a.active {
-    background-color: #04AA6D;
-    color: white;
-}
-.galleryslides {
-    box-sizing: border-box;
-    position: relative;
-    background-color: black;
-}
-.slides {
-    display: none;
-}
-.cursor {
-    cursor: pointer;
-}
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-}
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-.prev:hover,
-.next:hover {
-    background-color: rgb(245, 98, 98);
-}
-.numbertext {
-    color: tomato;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-.caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-}
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.column {
-    float: left;
-    width: 16.66%;
-}
-.demo {
-    opacity: 0.6;
-}
-.active,
-.demo:hover {
-    opacity: 1;
+.splide__slide__container {
+    height: 40%;
+    width: 40%;
 }
 #contact {
     display: grid; 
@@ -138,11 +76,19 @@ h2 {
     width: 20px;
 }
 #headercontact {
-    display: block;
+    display: inline-block;
     width: 100%;
-    height: 100%;
+    height: 50%;
     grid-area: hr;
     background-color: rgb(219, 197, 0);
+    text-align: center;
+    vertical-align: middle;
+}
+#logo-stopka {
+    display: inline-block;
+    max-width: 40%;
+    height: auto;
+    line-height: normal;
 }
 #companyname {
     grid-area: company-name;
