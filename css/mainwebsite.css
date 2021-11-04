@@ -2,6 +2,7 @@ body {
     background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
+    width: 100%;
     font-size: 28px;
     font-family: 'Brush Script MT', cursive;
     z-index: -1;
@@ -17,10 +18,10 @@ body {
 }
 .video {
     position: static;
-    width: fit-content;
+    width: 100%;
     right: 0;
     bottom: 0;
-    filter: contrast(70%)
+    filter: contrast(70%);
 }
 #main {
     position: static;
@@ -28,7 +29,7 @@ body {
     min-height: 100%;
     text-align: left;
 }
-nav {
+#navbar {
     position: fixed;
     top: 0;
     text-align: center;
@@ -44,13 +45,18 @@ ul {
 li {
     display: inline;
 }
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+.slick-next {
+    background-color: rgb(255, 0, 0);
 }
-.sticky + .content {
-    padding-top: 10px;
+.slick-prev {
+    background-color: yellow;
+}
+#gallery2 {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    text-align: center;
+    flex-shrink: 1;
 }
 #aboutus {
     height: 400px;
@@ -62,10 +68,6 @@ li {
 #products {
     height: 500px;
     background-color: #3f3f3f;
-}
-.splide__slide__container {
-    height: 40%;
-    width: 40%;
 }
 #contact {
     display: grid;
