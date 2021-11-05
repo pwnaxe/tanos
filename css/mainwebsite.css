@@ -56,13 +56,28 @@ li {
 .slick-next {
     background-color: rgb(255, 0, 0);
     grid-area: next;
+    width: 30%;
+    height: 10%;
+    justify-self: center; 
+    align-self: center;
+    transform: translate(-271%, 0);
+    z-index: 1;
 }
 .photo {
     grid-area: photo;
+    width: max-content;
+    max-width: max-content;
 }
 .slick-prev {
     background-color: yellow;
     grid-area: prev;
+    width: 30%;
+    height: 10%;
+    justify-self: center; 
+    align-self: center;
+    transform: translate(271%, 0);
+    z-index: 1;
+}
 }
 #gallery2 {
     display: inline-flex;
