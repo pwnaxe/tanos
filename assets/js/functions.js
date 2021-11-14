@@ -8,6 +8,7 @@ function myMap() {
 window.addEventListener('DOMContentLoaded',function () {
   myMap();
 });
+
 $(document).ready(function(){
 $('.fade').slick({
     dots: false,
@@ -18,5 +19,11 @@ $('.fade').slick({
     speed: 500,
     fade: true,
     cssEase: 'linear'
+  });
+});
+
+$(document).ready(function(){
+  $('.single-item').slick({
+    
   });
 });
