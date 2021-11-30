@@ -28,10 +28,11 @@ $(document).ready(function(){
   });
 });
 
-window.onscroll = function() {myFunction()};
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+/// https://blog.hubspot.com/website/center-div-css ///
+
 function myFunction() {
+  var navbar = document.getElementById("navbar").offsetTop;
+var sticky = navbar.offsetTop;
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } 
