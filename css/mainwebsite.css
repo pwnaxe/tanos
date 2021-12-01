@@ -40,8 +40,12 @@ h2 {
 
 #menu {
     position: absolute;
-    text-align: center;
+    width: 100%;
+    
     z-index: 1;
+}
+#menu div {
+    text-align: center;
 }
 
 #navbar {
