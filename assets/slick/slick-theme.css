@@ -79,6 +79,7 @@
 
 .slick-prev
 {
+    background-color: #fff;
     left: -25px;
 }
 [dir='rtl'] .slick-prev
@@ -88,6 +89,7 @@
 }
 .slick-prev:before
 {
+    
     content: '←';
 }
 [dir='rtl'] .slick-prev:before

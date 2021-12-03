@@ -181,6 +181,14 @@ li {
     
 }
 
+#gallery .slick-next{
+  background-color: #fff;
+}
+
+#gallery .slick-prev{
+    background-color: #5f5f5fe3;
+}
+
 #gallery2 {
     margin-left: 10%;
     margin-right: 10%;
