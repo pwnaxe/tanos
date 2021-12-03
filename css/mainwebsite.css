@@ -153,10 +153,10 @@ li {
 }
 
 .slick-next {
-    background-color: rgb(255, 0, 0);
+    background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/Prawa%201.png");
     grid-area: next;
-    width: 30%;
-    height: 10%;
+    width: 35%;
+    height: 70%;
     justify-self: center;
     align-self: center;
     transform: translate(-271%, 0);
@@ -170,7 +170,7 @@ li {
 }
 
 .slick-prev {
-    background-color: yellow;
+    background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/lewa%201.png");
     grid-area: prev;
     width: 30%;
     height: 10%;
@@ -182,11 +182,13 @@ li {
 }
 
 #gallery .slick-next{
-  background-color: #fff;
+    background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/prawa%202.png");
+    width: 25%;
+    height: 17%;
 }
 
 #gallery .slick-prev{
-    background-color: #5f5f5fe3;
+    background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/lewa%202.png");
 }
 
 #gallery2 {
