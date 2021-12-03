@@ -1,13 +1,29 @@
+document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('scroll', navscroll);
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function navscroll() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } 
+  else {
+    navbar.classList.remove("sticky");
+  }
+}
+})
+
+window.addEventListener('DOMContentLoaded',function () {
+  myMap();
+});
+
 function myMap() {
     var mapProp = {
         center: new google.maps.LatLng(52.357667, 21.026999),
         zoom: 9, };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
-
-window.addEventListener('DOMContentLoaded',function () {
-  myMap();
-});
 
 $(document).ready(function(){
 $('.fade').slick({
@@ -28,15 +44,3 @@ $(document).ready(function(){
   });
 });
 
-/// https://blog.hubspot.com/website/center-div-css ///
-
-function myFunction() {
-  var navbar = document.getElementById("navbar").offsetTop;
-var sticky = navbar.offsetTop;
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } 
-  else {
-    navbar.classList.remove("sticky");
-  }
-}
