@@ -52,6 +52,26 @@ h2 {
     background-color: #3f3f3f;
 }
 
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: auto;
+    color: white;
+    padding: 14px 16px;
+    background-color: violet;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+    color: yellow;
+  }
+
 #navbar a {
     float: center;
     display: block;
@@ -61,19 +81,35 @@ h2 {
     text-decoration: none;
   }
 
-  #navbar a:hover {
-    background-color: #ddd;
-    color: black;
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
   }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    position: fixed;
+  }  
   
   .sticky {
     position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-  .nosticky {
-    position: static;
     top: 0;
     width: 100%;
   }
@@ -155,8 +191,8 @@ li {
 .slick-next {
     background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/Prawa%201.png");
     grid-area: next;
-    width: 35%;
-    height: 70%;
+    width: 45%;
+    height: 50%;
     justify-self: center;
     align-self: center;
     transform: translate(-271%, 0);
@@ -172,8 +208,8 @@ li {
 .slick-prev {
     background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/lewa%201.png");
     grid-area: prev;
-    width: 30%;
-    height: 10%;
+    width: 40%;
+    height: 40%;
     justify-self: center;
     align-self: center;
     transform: translate(271%, 0);
