@@ -40,6 +40,7 @@ h2 {
     width: 100%;
     z-index: 1;
 }
+
 #menu div {
     text-align: center;
 }
@@ -53,7 +54,6 @@ h2 {
 }
 
 .dropdown {
-    float: left;
     overflow: hidden;
 }
 
@@ -67,10 +67,11 @@ h2 {
     margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
     background-color: red;
     color: yellow;
-  }
+}
 
 #navbar a {
     float: center;
@@ -79,44 +80,44 @@ h2 {
     text-align: center;
     padding: 14px;
     text-decoration: none;
-  }
+}
 
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
+}
 
-  .dropdown-content a {
+.dropdown-content a {
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
+}
 
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
     position: fixed;
-  }  
-  
-  .sticky {
+}
+
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
 
-  .sticky + .content {
+.sticky+.content {
     padding-top: 60px;
-  }
+}
 
 ul {
     list-style-type: none;
@@ -132,6 +133,7 @@ li {
     height: 100vh;
     background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/tanos%20zajawki.jpg");
 }
+
 #aboutusbox {
     display: block;
     text-align: center;
@@ -188,43 +190,46 @@ li {
     margin-top: 3%;
 }
 
-.slick-next {
-    background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/Prawa%201.png");
-    grid-area: next;
-    width: 45%;
-    height: 50%;
-    justify-self: center;
-    align-self: center;
-    transform: translate(-271%, 0);
-    z-index: 1;
-}
-
 .photo {
     grid-area: photo;
     width: max-content;
     max-width: max-content;
 }
 
+.slick-next {
+    background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/Prawa%201.png");
+    grid-area: next;
+    width: 85px;
+    height: 395px;
+    justify-self: center;
+    align-self: center;
+    transform: translate(-271%, 0);
+    z-index: 1;
+}
+
 .slick-prev {
     background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/lewa%201.png");
     grid-area: prev;
-    width: 40%;
-    height: 40%;
+    width: 85px;
+    height: 395px;
+    display: block;
     justify-self: center;
     align-self: center;
     transform: translate(271%, 0);
     z-index: 1;
-    
+
 }
 
-#gallery .slick-next{
+#gallery .slick-next {
     background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/prawa%202.png");
-    width: 25%;
-    height: 17%;
+    width: 50px;
+    height: 100px;
 }
 
-#gallery .slick-prev{
+#gallery .slick-prev {
     background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/lewa%202.png");
+    width: 50px;
+    height: 100px;
 }
 
 #gallery2 {
