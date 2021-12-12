@@ -59,12 +59,46 @@ h2 {
 
 .dropdown .dropbtn {
     font-size: 16px;
+    text-align: end;
     border: none;
     outline: auto;
     color: white;
     padding: 14px 16px;
     background-color: violet;
     margin: 0;
+}
+
+.navigation_icon {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: white;
+    top: 50%;
+    display: block;
+    margin-top: -2px;
+}
+
+.navigation_icon:before {
+    top: -10px;
+}
+
+.navigation_icon:after, .navigation_icon:before {
+    display: block;
+    content: "";
+}
+
+.navigation_icon, .navigation_icon:after, .navigation_icon:before {
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+:after, :before {
+    box-sizing: inherit;
 }
 
 .navbar a:hover,
@@ -84,7 +118,8 @@ h2 {
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: relative;
+    text-align: end;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
