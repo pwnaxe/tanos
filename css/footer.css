@@ -1,0 +1,45 @@
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "hr hr hr hr hr"". company-name company-address company-map .";
+    background-color: rgb(24, 20, 20);
+}
+
+#headercontact {
+    width: auto;
+    height: 200px;
+    grid-area: hr;
+    background-color: rgb(219, 197, 0);
+}
+
+#logo-stopka {
+    display: flex;
+    height: 400px;
+    width: auto;
+    margin: auto;
+    transform: translate(0, -22%);
+}
+
+#companyname {
+    grid-area: company-name;
+    color: #5f5f5f;
+    margin-bottom: 20%;
+}
+
+#companyadress {
+    grid-area: company-address;
+    color: #5f5f5f;
+    margin-bottom: 20%;
+}
+
+#companymap {
+    grid-area: company-map;
+    margin-bottom: 20%;
+}
+
+#googleMap {
+    width: auto;
+    height: 100%;
+}

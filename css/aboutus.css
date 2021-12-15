@@ -1,0 +1,16 @@
+#aboutus {
+    height: 100vh;
+    background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/tanos%20zajawki.jpg");
+}
+
+#aboutusbox {
+    display: block;
+    text-align: center;
+    height: 100vh;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: auto;
+    background-color: #5f5f5fe3;
+    padding: 0;
+    font-size: 20px;
+}
