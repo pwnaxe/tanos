@@ -1,10 +1,9 @@
 #navbar {
-    display: block;
     text-align: center;
     width: 100%;
     overflow: hidden;
     z-index: 100;
-    background-color: #3f3f3f;
+    background-color: blue;
 }
 
 .hamburger {
@@ -23,36 +22,36 @@
     color: inherit;
     border: 0;
     background-color: transparent;
-}
+}   
 
 .hamburger_icon {
     position: absolute;
     width: 40px;
-    height: 4px;
+    top: 7px;
+    right: -450px;
+    justify-self: center;
     transition-property: transform;
     border-radius: 4px;
     background-color: #fff;
-    top: 50%;
     display: block;
-    margin-top: -2px;
 }
 
 .dropdown-content a {
-    color: black;
+    color: rgba(0, 0, 0, 0);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
-.dropdown-content:hover {
-   background-color: aqua;
-}
-
-
 .hamburger_icon:before {
     top: -10px;
 }
+
+.hamburger_icon:after {
+    top: 10px;
+}
+
 
 .hamburger_icon:after, .hamburger_icon:before {
     display: block;
@@ -74,18 +73,20 @@
 #navbar a {
     float: center;
     display: block;
-    color: #ff0000;
+    color: #fffb00;
     text-align: center;
     padding: 14px;
     text-decoration: none;
 }
 
 .dropdown-content {
-    display: none;
     position: relative;
+    display: none;
     text-align: end;
+    right: auto;
+    left: 80%;
     background-color: #000000;
-    min-width: 160px;
+    width: 20%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -94,8 +95,13 @@
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: black;
 }
 
 .sticky+.content {
     padding-top: 60px;
+}
+
+.dropdown ul {
+    
 }
