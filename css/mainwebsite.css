@@ -54,3 +54,8 @@ h2 {
 #menu div {
     text-align: center;
 }
+
+.mediaicon {
+    width: 25px;
+    height: 25px;
+}

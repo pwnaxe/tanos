@@ -1,4 +1,5 @@
 #navbar {
+    display: inline-block;
     text-align: center;
     width: 100%;
     overflow: hidden;
@@ -61,7 +62,7 @@
 .hamburger_icon, .hamburger_icon:after, .hamburger_icon:before {
     position: absolute;
     width: 40px;
-    height: 4px;
+    height: 3px;
     border-radius: 4px;
     background-color: white;
 }
@@ -100,8 +101,4 @@
 
 .sticky+.content {
     padding-top: 60px;
-}
-
-.dropdown ul {
-    
 }
