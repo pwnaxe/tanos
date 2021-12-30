@@ -7,7 +7,7 @@
     background-color: #5f5f5fe3;
 }
 
-.hamburger {
+/* .hamburger {
     position: relative;
     display: inline-block;
     overflow: visible;
@@ -23,9 +23,9 @@
     color: inherit;
     border: 0;
     background-color: transparent;
-}   
+}    */
 
-.hamburger_icon {
+/* .hamburger_icon {
     position: absolute;
     width: 40px;
     top: 7px;
@@ -54,20 +54,24 @@
 }
 
 
-.hamburger_icon:after, .hamburger_icon:before {
+.hamburger_icon:after,
+.hamburger_icon:before {
     display: block;
     content: "";
 }
 
-.hamburger_icon, .hamburger_icon:after, .hamburger_icon:before {
+.hamburger_icon,
+.hamburger_icon:after,
+.hamburger_icon:before {
     position: absolute;
     width: 40px;
     height: 3px;
     border-radius: 4px;
     background-color: white;
-}
+} */
 
-:after, :before {
+:after,
+:before {
     box-sizing: inherit;
 }
 
