@@ -1,10 +1,27 @@
 #navbar {
-  display: inline-block;
-  text-align: end;
+  display: grid; 
+  grid-template-columns: 6fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr; 
+  gap: 0px 3px; 
+  grid-template-areas: 
+    "logo-navbar hamburger facebook-navbar linkedin-navbar";
+  padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
   z-index: 100;
   background-color: #5f5f5fe3;
+}
+
+.logo-navbar { grid-area: logo-navbar; }
+.hamburger { grid-area: hamburger; }
+.facebook-navbar { grid-area: facebook-navbar; width: 25px;
+  height: 25px; }
+.linkedin-navbar { grid-area: linkedin-navbar; width: 25px;
+  height: 25px;}
+
+.logo-navbar {
+  width: 100px;
+  height: 20px;
 }
 
 .hamburger {
