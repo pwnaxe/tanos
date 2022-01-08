@@ -24,3 +24,27 @@
     margin-left: 10%;
     margin-right: 10%;
 }
+
+.slick-next {
+    background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/Prawa%201.png");
+    grid-area: next;
+    width: 85px;
+    height: 395px;
+    justify-self: center;
+    align-self: center;
+    margin-right: -200%;
+    z-index: 1;
+}
+
+.slick-prev {
+    background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/lewa%201.png");
+    grid-area: prev;
+    width: 85px;
+    height: 395px;
+    display: block;
+    justify-self: center;
+    align-self: center;
+    margin-left: -200%;
+    z-index: 1;
+
+}
