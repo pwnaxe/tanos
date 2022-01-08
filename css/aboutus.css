@@ -4,13 +4,38 @@
 }
 
 #aboutusbox {
-    display: block;
     text-align: center;
     min-height: 100vh;
+    height: 100vh;
     margin-left: 25%;
     margin-right: 25%;
     margin-top: auto;
+    margin-bottom: auto;
     background-color: #5f5f5fe3;
-    padding: 0;
+    padding-top: 40px;
     font-size: 20px;
+}
+
+.aboutustext {
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10px;
+}
+
+.ceo1 {
+    background-color: white;
+    width: 100px;
+    height: 40px;
+    margin-left: -20%;
+    margin-right: auto;
+    font-size: 14px;
+}
+.ceo2 {
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    margin-right: -20%;
+    margin-left: auto;
+    font-size: 14px;
 }

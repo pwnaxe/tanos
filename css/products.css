@@ -1,15 +1,18 @@
 #products {
     margin: auto;
-    padding-top: 20px;
     min-height: 100vh;
     width: 100%;
-    background-color: #3f3f3f;
+    background-color: #9b9b9b;
 }
 
 #ofertatext {
     text-align: center;
-    width: 100%;
-    margin-bottom: 3%;
+    min-height: 100vh;
+    padding-top: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: 5%;
+    background-color: #5f5f5f;
 }
 
 .single-item {
@@ -19,7 +22,7 @@
     grid-template-areas: "prev photo next";
     justify-content: center;
     align-content: center;
-    margin-top: 3%;
+    margin-top: 10%;
     margin-bottom: 3%;
     margin-left: 10%;
     margin-right: 10%;
@@ -28,23 +31,23 @@
 .slick-next {
     background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/Prawa%201.png");
     grid-area: next;
-    width: 85px;
+    width: 77px;
     height: 395px;
     justify-self: center;
     align-self: center;
-    margin-right: -200%;
+    margin-right: -291%;
     z-index: 1;
 }
 
 .slick-prev {
     background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/lewa%201.png");
     grid-area: prev;
-    width: 85px;
+    width: 77px;
     height: 395px;
     display: block;
     justify-self: center;
     align-self: center;
-    margin-left: -200%;
+    margin-left: -291%;
     z-index: 1;
 
 }
