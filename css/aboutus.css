@@ -1,6 +1,8 @@
 #aboutus {
-    min-height: 100vh;
-    background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/tanos%20zajawki.jpg");
+    height: 100vh;
+    background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/tanos_-4.jpg"), url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/17.01.2021%20Spawanie-41.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #aboutusbox {
@@ -33,10 +35,11 @@
     margin-left: -90%;
     margin-right: auto;
     font-size: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-top: -10px;
     vertical-align: top;
     text-align: left;
+    padding-left: 10px;
 }
 .ceo2 {
     display: inline-block;
@@ -46,10 +49,11 @@
     margin-right: 0;
     margin-left: auto;
     font-size: 15px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-top: -10px;
+    padding-left: 5px;
     vertical-align: top;
-    transform: translate(430%,0);
+    transform: translate(390%,0);
     text-align: left;
 }
 
