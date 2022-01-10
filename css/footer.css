@@ -1,16 +1,16 @@
 #contact {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     gap: 0px 0px;
-    grid-template-areas: "hr hr hr hr hr"". company-name company-address company-map .";
+    padding-top: 50px;
+    grid-template-areas: ". company-name company-address company-map .";
     background-color: rgb(24, 20, 20);
 }
 
 #headercontact {
     width: auto;
     height: 200px;
-    grid-area: hr;
     background-color: rgb(219, 197, 0);
 }
 
