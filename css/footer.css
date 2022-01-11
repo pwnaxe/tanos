@@ -10,16 +10,25 @@
 
 #headercontact {
     width: auto;
-    height: 200px;
+    height: 140px;
     background-color: rgb(219, 197, 0);
+    text-align: center;
 }
 
-#logo-stopka {
-    display: flex;
-    height: 400px;
-    width: auto;
-    margin: auto;
-    transform: translate(0, -22%);
+#logofooter {
+    float: left;
+    overflow: hidden;
+}
+
+.footerimg {
+    height: 140px;
+    width: 250px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+#socialiconsfooter {
+    float: right;
 }
 
 #companyname {
