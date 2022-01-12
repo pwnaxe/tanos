@@ -1,14 +1,14 @@
 #navbar {
-  display: grid; 
-  grid-template-columns: 3.5fr 6fr 0.3fr 0.2fr 0.2fr 0.2fr; 
-  grid-template-rows: 1fr; 
-  gap: 0px 3px; 
-  grid-template-areas: 
+  display: grid;
+  grid-template-columns: 3.5fr 6fr 0.3fr 25px 25px 25px 15px;
+  grid-template-rows: 1fr;
+  gap: 0px 3px;
+  grid-template-areas:
     "logo-navbar . hamburger facebook-navbar instagram-navbar youtube-navbar";
-  justify-content: center; 
-  align-content: space-around; 
-  justify-items: center; 
-  align-items: center; 
+  justify-content: center;
+  align-content: space-around;
+  justify-items: center;
+  align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
@@ -17,14 +17,31 @@
   height: 50px;
 }
 
-.logo-navbar { grid-area: logo-navbar; }
-.hamburger { grid-area: hamburger; }
-.facebook-navbar { grid-area: facebook-navbar; width: 45px;
-  height: 45px;}
-.instagram-navbar { grid-area: instagram-navbar; width: 45px;
-  height: 45px;}
-.youtube-navbar {grid-area: youtube-navbar; width: 45px;
-  height: 45px;}
+.logo-navbar {
+  grid-area: logo-navbar;
+}
+
+.hamburger {
+  grid-area: hamburger;
+}
+
+.facebook-navbar {
+  grid-area: facebook-navbar;
+  width: 45px;
+  height: 45px;
+}
+
+.instagram-navbar {
+  grid-area: instagram-navbar;
+  width: 45px;
+  height: 45px;
+}
+
+.youtube-navbar {
+  grid-area: youtube-navbar;
+  width: 45px;
+  height: 45px;
+}
 
 .iconnavbar {
   width: 45px;
@@ -104,9 +121,11 @@
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
 .dropdown-content li {
   display: block;
 }
+
 .dropdown-content a {
   color: rgba(0, 0, 0, 0);
   padding: 12px 16px;
