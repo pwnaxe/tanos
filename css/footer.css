@@ -9,6 +9,16 @@
 }
 
 #headercontact {
+    display: grid; 
+    grid-template-columns: 1.5fr 2.5fr 0.5fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0% 0px; 
+    grid-template-areas: 
+    ". logofooter . socialiconsfooter"; 
+    justify-content: center; 
+    align-content: space-around; 
+    justify-items: center; 
+    align-items: center; 
     width: auto;
     height: 140px;
     background-color: rgb(219, 197, 0);
@@ -16,19 +26,23 @@
 }
 
 #logofooter {
-    float: left;
+    grid-area: logofooter;
     overflow: hidden;
+    height: 100px;
 }
 
 .footerimg {
-    height: 140px;
-    width: 250px;
-    overflow: hidden;
-    z-index: 5;
+    height: 100px;
+    width: auto;
 }
 
 #socialiconsfooter {
-    float: right;
+   grid-area: socialiconsfooter;
+}
+
+.iconfooter {
+    height: 60px;
+    width: 60px;
 }
 
 #companyname {
