@@ -37,6 +37,7 @@
     align-self: center;
     margin-right: -291%;
     z-index: 1;
+    border: 0;
 }
 
 .slick-prev {
@@ -49,5 +50,5 @@
     align-self: center;
     margin-left: -291%;
     z-index: 1;
-
+    border: 0;
 }

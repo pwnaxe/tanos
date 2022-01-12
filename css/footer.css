@@ -1,16 +1,19 @@
 #contact {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.75fr 1fr 1fr 1fr 0.75fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     padding-top: 50px;
     grid-template-areas: ". company-name company-address company-map .";
+    justify-content: center; 
     background-color: rgb(24, 20, 20);
+    text-align: center;
+    overflow: visible;
 }
 
 #headercontact {
     display: grid; 
-    grid-template-columns: 1.5fr 2.5fr 0.5fr 1fr; 
+    grid-template-columns: 1.25fr 2.5fr 0.5fr 1fr; 
     grid-template-rows: 1fr; 
     gap: 0% 0px; 
     grid-template-areas: 
@@ -20,7 +23,7 @@
     justify-items: center; 
     align-items: center; 
     width: auto;
-    height: 140px;
+    height: 100px;
     background-color: rgb(219, 197, 0);
     text-align: center;
 }
@@ -28,11 +31,11 @@
 #logofooter {
     grid-area: logofooter;
     overflow: hidden;
-    height: 100px;
+    height: 70px;
 }
 
 .footerimg {
-    height: 100px;
+    height: 70px;
     width: auto;
 }
 

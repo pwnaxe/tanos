@@ -1,29 +1,34 @@
 #navbar {
   display: grid; 
-  grid-template-columns: 6fr 1fr 1fr 1fr 1fr; 
+  grid-template-columns: 3.5fr 6fr 0.3fr 0.2fr 0.2fr 0.2fr; 
   grid-template-rows: 1fr; 
   gap: 0px 3px; 
   grid-template-areas: 
-    "logo-navbar hamburger facebook-navbar instagram-navbar youtube-navbar";
+    "logo-navbar . hamburger facebook-navbar instagram-navbar youtube-navbar";
+  justify-content: center; 
+  align-content: space-around; 
+  justify-items: center; 
+  align-items: center; 
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
   z-index: 100;
   background-color: #5f5f5fe3;
+  height: 50px;
 }
 
 .logo-navbar { grid-area: logo-navbar; }
 .hamburger { grid-area: hamburger; }
-.facebook-navbar { grid-area: facebook-navbar; width: 25px;
-  height: 25px;}
-.instagram-navbar { grid-area: instagram-navbar; width: 25px;
-  height: 25px;}
-.youtube-navbar {grid-area: youtube-navbar; width: 25px;
-  height: 25px;}
+.facebook-navbar { grid-area: facebook-navbar; width: 45px;
+  height: 45px;}
+.instagram-navbar { grid-area: instagram-navbar; width: 45px;
+  height: 45px;}
+.youtube-navbar {grid-area: youtube-navbar; width: 45px;
+  height: 45px;}
 
 .iconnavbar {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
 }
 
 .logo-navbar {
@@ -89,14 +94,6 @@
   box-sizing: inherit;
 }
 
-#navbar a {
-  display: block;
-  color: #fffb00;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
-
 .dropdown-content {
   position: fixed;
   display: block;
@@ -129,10 +126,6 @@
   width: 100%;
   background-color: black;
 }
-
-/* .sticky+.content {
-    padding-top: 60px;
-} */
 
 .hidden {
   display: none;

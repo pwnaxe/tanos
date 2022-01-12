@@ -19,10 +19,14 @@ ul {
 li {
   display: inline;
 }
+
 h2 {
   margin: auto;
   padding: 0;
-  color: #dbc500;
+}
+
+h4 {
+  color: yellow;
 }
 
 .white {
