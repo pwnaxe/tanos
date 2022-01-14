@@ -7,7 +7,6 @@ body {
   padding: 0;
   width: 100%;
   max-width: 100%;
-  min-width: 100%;
   font-size: 28px;
   font-family: sans-serif;
 }
@@ -34,15 +33,14 @@ h4 {
 }
 
 #main {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
-  min-width: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
 }
 .video {
   position: absolute;
-  filter: contrast(70%);
+  filter: brightness(70%);
   z-index: -1;
   width: 100%;
 }
@@ -52,7 +50,6 @@ h4 {
 }
 #menu {
   display: inline-block;
-  float: left;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -131,5 +128,11 @@ h4 {
 }
 
 #socialicons {
+  display: inline-block;
+  float: right;
+}
+
+#lang {
+  display: inline-block;
   float: right;
 }
