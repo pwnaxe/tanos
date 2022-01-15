@@ -1,20 +1,19 @@
 #navbar {
   display: grid;
-  grid-template-columns: 3.5fr 6fr 0.3fr 25px 25px 25px 15px;
+  grid-template-columns: 3.5fr 6fr 0.3fr 45px 45px 45px 15px;
   grid-template-rows: 1fr;
-  gap: 0px 3px;
+  gap: 0px 4px;
   grid-template-areas:
     "logo-navbar . hamburger facebook-navbar instagram-navbar youtube-navbar";
   justify-content: center;
   align-content: space-around;
   justify-items: center;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   width: 100%;
   z-index: 100;
   background-color: #5f5f5fe3;
-  height: 50px;
 }
 
 .logo-navbar {
@@ -27,20 +26,14 @@
 
 .facebook-navbar {
   grid-area: facebook-navbar;
-  width: 45px;
-  height: 45px;
 }
 
 .instagram-navbar {
   grid-area: instagram-navbar;
-  width: 45px;
-  height: 45px;
 }
 
 .youtube-navbar {
   grid-area: youtube-navbar;
-  width: 45px;
-  height: 45px;
 }
 
 .iconnavbar {
@@ -57,11 +50,10 @@
   position: relative;
   display: inline-block;
   overflow: visible;
-  width: 40px;
+  width: 35px;
   height: 24px;
   margin: 0;
   right: 10%;
-  transform: translate(0px, -2px);
   cursor: pointer;
   transition-timing-function: linear;
   transition-duration: 0.15s;
