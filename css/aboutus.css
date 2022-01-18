@@ -7,7 +7,8 @@
 
 #aboutusbox {
     text-align: center;
-    height: 100vh;
+    position: relative;
+    min-height: 100vh;
     margin-left: 30%;
     margin-right: 30%;
     margin-top: auto;
@@ -27,35 +28,30 @@
 }
 
 .ceo1 {
-    display: inline-block;
+    display: block;
+    position: absolute;
     background-color: white;
-    width: 170px;
+    width: 190px;
     height: 30px;
-    margin-top: 20%;
-    margin-left: auto;
-    margin-right: 50%;
+    bottom: 5rem;
     font-size: 15px;
     padding-bottom: 15px;
     padding-top: -10px;
-    vertical-align: top;
-    text-align: left;
-    padding-left: 10px;
+    text-align: center;
     transform: translate(-90%, 0);
 }
 .ceo2 {
-    display: inline-block;
+    display: block;
+    position: absolute;
     background-color: white;
     height: 30px;
-    width: 170px;
-    margin-top: 20%;
-    margin-right: auto;
-    margin-left: auto;
+    width: 190px;
+    bottom: 5rem;
+    right: 0rem;
     font-size: 15px;
     padding-bottom: 15px;
     padding-top: -10px;
-    padding-left: 5px;
-    vertical-align: top;
-    text-align: left;
+    text-align: center;
     transform: translate(90%, 0);
 }
 

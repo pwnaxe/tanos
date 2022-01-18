@@ -25,6 +25,7 @@
 
 #gallery .slick-next {
     background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/prawa%202.png");
+    background-position: center;
     width: 50px;
     height: 100px;
     margin-right: 0%;
@@ -33,6 +34,7 @@
 
 #gallery .slick-prev {
     background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/lewa%202.png");
+    background-position: center;
     width: 50px;
     height: 100px;
     margin-left: 0%;
