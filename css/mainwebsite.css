@@ -49,7 +49,8 @@ h4 {
   height: 100%;
 }
 #menu {
-  display: inline-block;
+  display: block;
+  float: left;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -128,11 +129,11 @@ h4 {
 }
 
 #socialicons {
-  display: inline-block;
+  display: block;
   float: right;
 }
 
 #lang {
-  display: inline-block;
+  display: block;
   float: right;
 }
