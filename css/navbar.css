@@ -50,56 +50,6 @@
   height: 40px;
 }
 
-.hamburger {
-  width: 45px;
-  height: 45px;
-  cursor: pointer;
-  color: inherit;
-  border: 0;
-  background-color: transparent;
-  padding: auto;
-  margin: auto;
-  display: block;
-}
-
-.hamburger_icon,
-.hamburger_icon:after,
-.hamburger_icon:before {
-  position: absolute;
-  width: 30px;
-  height: 3px;
-  border-radius: 4px;
-  background-color: white;
-}
-
-.hamburger_icon {
-  position: absolute;
-  width: 30px;
-  justify-self: center;
-  border-radius: 4px;
-  background-color: #fff;
-  display: block;
-}
-
-.hamburger_icon:before {
-  top: -10px;
-}
-
-.hamburger_icon:after {
-  top: 10px;
-}
-
-.hamburger_icon:after,
-.hamburger_icon:before {
-  display: block;
-  content: "";
-}
-
-:after,
-:before {
-  box-sizing: inherit;
-}
-
 .dropdown-content {
   position: absolute;
   display: block;

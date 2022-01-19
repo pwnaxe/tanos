@@ -31,6 +31,13 @@ $(document).ready(function () {
   });
 
   $(".single-item").slick({});
+
+  var $hamburger = $(".hamburger");
+  $hamburger.on("click", function(e) {
+    $hamburger.toggleClass("is-active");
+    // Do something else, like open/close menu
+  });
+  
 });
 
 function myMap() {
@@ -48,3 +55,4 @@ function burgerFunction() {
   const button = document.getElementById("dropdown-links");
   button.classList.toggle("hidden");
 }
+

@@ -65,6 +65,7 @@ h4 {
 #menu li a {
   display: inline-block;
   padding-top: 30px;
+  transform: skewX(-15deg);
 }
 
 .menu-links {
@@ -77,7 +78,7 @@ h4 {
 #menu li a:hover {
   background-color: white;
   color: #000000;
-  transform: rotate(25deg);
+  transform: skewX(-15deg);
 }
 
 .mediaicon {

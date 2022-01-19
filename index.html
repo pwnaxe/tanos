@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="./css/products.css">
     <link rel="stylesheet" type="text/css" href="./css/gallery.css">
     <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./css/hamburgers.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/slick/slick.js"></script>
     <script src="./assets/js/functions.js"></script>
@@ -51,9 +52,11 @@
         <nav id="navbar" class="sticky">
             <img class="logo-navbar" src="http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/logo_bia%c5%82e%20(1).png">
                 <div class="navbaricon">
-                    <button class="hamburger" onclick="burgerFunction()">
-                    <span class="hamburger_icon"></span>
-                    </button>
+                    <button class="hamburger hamburger--spin" type="button" onclick="burgerFunction()">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>
                     <div class="dropdown-content hidden"  id="dropdown-links">
                         <ul>
                             <li><a href="#aboutus">O nas</a></li>
