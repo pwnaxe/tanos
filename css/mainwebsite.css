@@ -48,6 +48,7 @@ h4 {
   position: absolute;
   height: 100%;
 }
+
 #menu {
   display: block;
   float: left;
@@ -136,4 +137,8 @@ h4 {
 #lang {
   display: block;
   float: right;
+}
+
+.facebook {
+  fill: snow;
 }

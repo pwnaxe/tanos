@@ -1,16 +1,15 @@
 #navbar {
-  display: grid;
-  grid-template-columns: 3.5fr 6fr 1fr 45px 45px 45px;
-  grid-template-rows: 1fr;
-  gap: 0px 4px;
-  grid-template-areas:
-    "logo-navbar . hamburger facebook-navbar instagram-navbar youtube-navbar";
-  justify-content: center;
-  align-content: space-around;
-  justify-items: center;
-  align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  display: grid; 
+  grid-template-columns: 2fr 5fr 90px 40px 40px 40px; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "logo-navbar . hamburger facebook-navbar instagram-navbar youtube-navbar"; 
+  justify-content: center; 
+  align-content: center; 
+  justify-items: center; 
+  align-items: center; 
+  height: auto;
   width: 100%;
   z-index: 100;
   background-color: #5f5f5fe3;
@@ -18,23 +17,31 @@
 
 .navbaricon {
   grid-area: hamburger;
+  width: 45px;
+  height: 45px;
 }
 
 .facebook-navbar {
   grid-area: facebook-navbar;
+  width: 25px;
+  height: 25px;
 }
 
 .instagram-navbar {
   grid-area: instagram-navbar;
+  width: 25px;
+  height: 25px;
 }
 
 .youtube-navbar {
   grid-area: youtube-navbar;
+  width: 25px;
+  height: 25px;
 }
 
 .iconnavbar {
-  width: 45px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
 }
 
 .logo-navbar {
@@ -44,19 +51,22 @@
 }
 
 .hamburger {
-  width: 35px;
-  height: 24px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   color: inherit;
   border: 0;
   background-color: transparent;
+  padding: auto;
+  margin: auto;
+  display: block;
 }
 
 .hamburger_icon,
 .hamburger_icon:after,
 .hamburger_icon:before {
   position: absolute;
-  width: 40px;
+  width: 30px;
   height: 3px;
   border-radius: 4px;
   background-color: white;
@@ -64,7 +74,7 @@
 
 .hamburger_icon {
   position: absolute;
-  width: 40px;
+  width: 30px;
   justify-self: center;
   border-radius: 4px;
   background-color: #fff;
