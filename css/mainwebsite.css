@@ -59,8 +59,12 @@ h4 {
 }
 
 #menu li {
-  display: inline-block;
   margin-right: 45px;
+}
+
+#menu li a {
+  display: inline-block;
+  padding-top: 30px;
 }
 
 .menu-links {
@@ -68,14 +72,12 @@ h4 {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-
 }
 
-.menu-links:hover {
-  display: block;
+#menu li a:hover {
   background-color: white;
   color: #000000;
-  height: 70px;
+  transform: rotate(25deg);
 }
 
 .mediaicon {
