@@ -1,7 +1,7 @@
 #products {
     margin: auto;
     min-height: 100vh;
-    width: 100%;
+    max-width: 100%;
     background-color: #9b9b9b;
 }
 
@@ -31,6 +31,7 @@
 .slick-next {
     background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/Prawa%201.png");
     background-position: center;
+    background-repeat: no-repeat;
     grid-area: next;
     width: 77px;
     height: 395px;
@@ -39,11 +40,13 @@
     margin-right: -291%;
     z-index: 1;
     border: 0;
+    cursor: pointer;
 }
 
 .slick-prev {
     background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/lewa%201.png");
     background-position: center;
+    background-repeat: no-repeat;
     grid-area: prev;
     width: 77px;
     height: 395px;
@@ -53,4 +56,5 @@
     margin-left: -291%;
     z-index: 1;
     border: 0;
+    cursor: pointer;
 }

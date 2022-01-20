@@ -9,6 +9,7 @@
     background-color: rgb(24, 20, 20);
     text-align: center;
     overflow: visible;
+    max-width: 100%;
 }
 
 #headercontact {
@@ -44,8 +45,8 @@
 }
 
 .iconfooter {
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
 }
 
 #companyname {

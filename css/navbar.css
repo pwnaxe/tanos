@@ -10,7 +10,7 @@
   justify-items: center; 
   align-items: center; 
   height: 55px;
-  width: 100%;
+  max-width: 100%;
   z-index: 100;
   background-color: #5f5f5fe3;
 }

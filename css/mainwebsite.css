@@ -5,7 +5,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 100%;
   max-width: 100%;
   font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
@@ -34,7 +33,7 @@ h4 {
 
 #main {
   min-height: 100vh;
-  width: 100%;
+  max-width: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
 }
@@ -52,20 +51,23 @@ h4 {
 #menu {
   display: block;
   position: absolute;
-  top: 3%;
   width: 100%;
   text-align: center;
   list-style: none;
+  left: -1%
 }
 
 #menu li {
-  margin-right: 45px;
+  margin-right: 35px;
 }
 
 #menu li a {
   display: inline-block;
-  padding-top: 30px;
-  transform: skewX(-15deg);
+  padding-top: 60px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transform: skewX(-5deg);
 }
 
 .menu-links {
@@ -73,6 +75,7 @@ h4 {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+  font-size: 24px;
 }
 
 #menu li a:hover {
@@ -90,22 +93,35 @@ h4 {
   display: block;
   position: absolute;
   left: auto;
-  right: 12%;
-  top: 3%;
+  right: 3%;
+  top: 4%;
 }
 
 #lang {
   display: block;
   position: absolute;
-  top: 3%;
   left: auto;
-  right: 3%;
+  right: 12%;
+}
+
+#lang a {
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  display: inline-block;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transform: skewX(-5deg);
 }
 
 #lang a:hover {
   background-color: white;
-  height: 50px;
-  transform: rotate(50deg);
+  color: #000000;
+  transform: skewX(-15deg);
 }
 
 .facebook {
