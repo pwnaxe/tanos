@@ -55,6 +55,10 @@
     align-content: center;
 }
 
+#gallery2 p {
+    font-size: 21px;
+}
+
 .imagegallery2 {
     grid-area: imggal2;
     justify-self: center;

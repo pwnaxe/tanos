@@ -8,6 +8,7 @@ body {
   max-width: 100%;
   font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 ul {
   list-style-type: none;
@@ -54,7 +55,7 @@ h4 {
   width: 100%;
   text-align: center;
   list-style: none;
-  left: -1%
+  left: -1%;
 }
 
 #menu li {
