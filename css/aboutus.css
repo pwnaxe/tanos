@@ -1,58 +1,58 @@
 #aboutus {
-    min-height: 100vh;
-    max-width: 100%;
-    background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/T%c5%82o1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  min-height: 100vh;
+  max-width: 100%;
+  background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/T%c5%82o1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
 }
 
 #aboutusbox {
-    text-align: center;
-    position: relative;
-    min-height: 100vh;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: auto;
-    margin-bottom: auto;
-    background-color: #5f5f5fe8;
-    padding-top: 40px;
-    font-size: 20px;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: #5f5f5fe8;
+  padding-top: 40px;
+  font-size: 20px;
 }
 
 .aboutustext {
-    text-align: left;
-    vertical-align: middle;
-    color: white;
-    width: 80%;
-    margin-left: 8%;
-    margin-right: 8%;
+  text-align: left;
+  vertical-align: middle;
+  color: white;
+  width: 80%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .ceo1 {
-    display: block;
-    position: absolute;
-    background-color: white;
-    width: 190px;
-    height: 30px;
-    bottom: 5rem;
-    font-size: 15px;
-    padding-bottom: 15px;
-    padding-top: -10px;
-    text-align: center;
-    transform: translate(-90%, 0);
+  display: block;
+  position: absolute;
+  background-color: white;
+  width: 190px;
+  height: 30px;
+  bottom: 5rem;
+  font-size: 15px;
+  padding-bottom: 15px;
+  padding-top: -10px;
+  text-align: center;
+  transform: translate(-90%, 0);
 }
 .ceo2 {
-    display: block;
-    position: absolute;
-    background-color: white;
-    height: 30px;
-    width: 190px;
-    bottom: 5rem;
-    right: 0rem;
-    font-size: 15px;
-    padding-bottom: 15px;
-    padding-top: -10px;
-    text-align: center;
-    transform: translate(90%, 0);
+  display: block;
+  position: absolute;
+  background-color: white;
+  height: 30px;
+  width: 190px;
+  bottom: 5rem;
+  right: 0rem;
+  font-size: 15px;
+  padding-bottom: 15px;
+  padding-top: -10px;
+  text-align: center;
+  transform: translate(90%, 0);
 }
-
