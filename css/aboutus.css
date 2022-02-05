@@ -1,6 +1,6 @@
 #aboutus {
   min-height: 100vh;
-  max-width: 100%;
+  max-width: 100vw;
   background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/T%c5%82o1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,22 +11,20 @@
   text-align: center;
   position: relative;
   min-height: 100vh;
-  margin-left: 30%;
-  margin-right: 30%;
   margin-top: auto;
   margin-bottom: auto;
-  background-color: #5f5f5fe8;
-  padding-top: 40px;
-  font-size: 20px;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  background-color: #252525e8;
+  font-size: 2vh;
 }
 
 .aboutustext {
   text-align: left;
   vertical-align: middle;
   color: white;
-  width: 80%;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 4vw;
+  margin-right: 4vw;
 }
 
 .ceo1 {
