@@ -5,8 +5,8 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  max-width: 100%;
-  font-size: 28px;
+  max-width: 100vw;
+  font-size: 1.25vw;
   font-family: Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
@@ -34,16 +34,16 @@ h4 {
 
 #main {
   min-height: 100vh;
-  max-width: 100%;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  max-width: 100vw;
+  overflow: hidden;
 }
 .video {
   position: absolute;
-  filter: brightness(70%);
+  filter: brightness(50%);
   z-index: -1;
   width: 100%;
 }
+
 .logo {
   position: absolute;
   height: 100%;
@@ -55,19 +55,15 @@ h4 {
   width: 100%;
   text-align: center;
   list-style: none;
-  left: -1%;
-}
-
-#menu li {
-  margin-right: 35px;
+  left: -3vw;
 }
 
 #menu li a {
   display: inline-block;
-  padding-top: 60px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-top: 6vh;
+  padding-bottom: 2vh;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
   transform: skewX(-5deg);
 }
 
@@ -76,7 +72,7 @@ h4 {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 1.25vw;
 }
 
 #menu li a:hover {
@@ -85,24 +81,19 @@ h4 {
   transform: skewX(-15deg);
 }
 
-.mediaicon {
-  width: 45px;
-  height: 45px;
-}
-
 #socialicons {
   display: block;
   position: absolute;
   left: auto;
-  right: 3%;
-  top: 4%;
+  right: 3vw;
+  top: 4vh;
 }
 
 #lang {
   display: block;
   position: absolute;
   left: auto;
-  right: 12%;
+  right: 12vw;
 }
 
 #lang a {
@@ -110,12 +101,12 @@ h4 {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 1.25vw;
   display: inline-block;
-  padding-top: 60px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-top: 6vh;
+  padding-bottom: 2vh;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
   transform: skewX(-5deg);
 }
 
@@ -130,6 +121,6 @@ h4 {
 }
 
 .menuicons {
-  height: 35px;
-  width: 35px;
+  height: 4vh;
+  width: 2vw;
 }
