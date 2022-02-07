@@ -70,6 +70,14 @@
   left: -5vw;
 }
 
-@media (width > 40em) {
-  /* wide design*/
+@media screen and (max-width: 1440px) {
+  #ofertatext .slick-list {
+    width: 126vw;
+  }
+  #ofertatext .slick-next {
+    height: 51.4vh;
+  }
+  #ofertatext .slick-prev {
+    height: 51.4vh;
+  }
 }

@@ -85,3 +85,12 @@
 .hidden {
   display: none;
 }
+
+@media screen and (max-width: 1440px) {
+  .dropdown-content {
+    width: 13.7vw;
+  }
+  #navbar {
+    height: 9vh;
+  }
+}

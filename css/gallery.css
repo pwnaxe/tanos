@@ -7,8 +7,18 @@
   max-width: 100%;
 }
 
+.galleryh {
+  text-align: center;
+  font-size: 5vh;
+  font-style: italic;
+  margin-top: 10vh;
+  font-weight: 500;
+}
+
 .fade {
   display: block;
+  position: relative;
+  margin-top: 10vh;
 }
 
 #gallery .photo {
@@ -72,4 +82,22 @@
   grid-area: txtgal2;
   justify-self: center;
   align-self: center;
+}
+
+@media screen and (max-width: 1440px) {
+  #gallery .slick-list {
+    width: 70vw;
+  }
+  .fade {
+    margin-left: auto;
+    margin-right: auto;
+    left: 5vw;
+    right: auto;
+  }
+  #gallery .slick-prev {
+    left: 4vw;
+  }
+  #gallery .slick-next {
+    right: 13vw;
+  }
 }
