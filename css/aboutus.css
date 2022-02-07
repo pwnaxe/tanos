@@ -5,26 +5,37 @@
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(100%);
+  margin: 0;
 }
 
 #aboutusbox {
+  display: block;
+  position: absolute;
   text-align: center;
   position: relative;
   min-height: 100vh;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 30vw;
-  margin-right: 30vw;
   background-color: #252525e8;
   font-size: 2vh;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top: 6vh;
+  box-sizing: border-box;
 }
 
 .aboutustext {
   text-align: left;
-  vertical-align: middle;
   color: white;
   margin-left: 4vw;
   margin-right: 4vw;
+}
+
+.aboutush {
+  text-align: left;
+  color: white;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  font-size: 7vh;
+  font-style: italic;
 }
 
 .ceo1 {
