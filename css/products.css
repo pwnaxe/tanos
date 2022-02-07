@@ -8,10 +8,10 @@
 
 #ofertatext {
   min-height: 100vh;
-  padding-top: 5vh;
-  width: 90vw;
-  margin-left: auto;
-  margin-right: 5%;
+  padding-top: 1vh;
+  width: auto;
+  margin-left: 5vw;
+  margin-right: 5vw;
   background-color: #5f5f5f;
 }
 
@@ -22,7 +22,7 @@
   margin-right: 10vw;
   font-size: 7vh;
   font-style: italic;
-  margin-top: 3vh;
+  margin-top: 8vh;
 }
 .productstext {
   text-align: left;
@@ -68,4 +68,8 @@
   padding: 0;
   position: absolute;
   left: -5vw;
+}
+
+@media (width > 40em) {
+  /* wide design*/
 }
