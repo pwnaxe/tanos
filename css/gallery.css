@@ -55,9 +55,9 @@
 }
 
 #gallery2 {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 3%;
+  margin-left: 11.7%;
+  margin-right: 19%;
+  margin-bottom: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;

@@ -37,6 +37,7 @@
 
 #ofertatext .slick-list {
   width: 126vw;
+  margin-left: -22%;
 }
 
 #slider-galeria {
@@ -55,6 +56,7 @@
   position: absolute;
   right: -5vw;
   top: 10vh;
+  z-index: 3;
 }
 
 #ofertatext .slick-prev {
@@ -68,11 +70,12 @@
   padding: 0;
   position: absolute;
   left: -5vw;
+  z-index: 3;
 }
 
 @media screen and (max-width: 1440px) {
   #ofertatext .slick-list {
-    width: 126vw;
+    margin-left: -25%;
   }
   #ofertatext .slick-next {
     height: 51.4vh;
