@@ -37,8 +37,10 @@
 }
 
 #ofertatext .slick-list {
+  position: absolute;
   width: 149rem;
-  margin-left: -22%;
+  min-height: 100%;
+  left: -23rem;
 }
 
 #slider-galeria {
