@@ -15,7 +15,6 @@
   position: relative;
   min-height: 100vh;
   background-color: #252525e8;
-  font-size: 2vh;
   margin-left: 30%;
   margin-right: 30%;
   padding-top: 6vh;
@@ -27,6 +26,7 @@
   color: white;
   margin-left: 4vw;
   margin-right: 4vw;
+  font-size: 1.25vw;
 }
 
 .aboutush {

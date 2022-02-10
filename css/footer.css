@@ -1,92 +1,93 @@
 #contact {
-    display: grid;
-    grid-template-columns: 0.75fr 1fr 1fr 1fr 0.75fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    padding-top: 8vh;
-    grid-template-areas: ". company-name company-address company-map .";
-    justify-content: center; 
-    background-color: rgb(24, 20, 20);
-    text-align: center;
-    overflow: visible;
-    max-width: 100%;
-    padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: 0.75fr 1fr 1fr 1fr 0.75fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  padding-top: 8vh;
+  grid-template-areas: ". company-name company-address company-map .";
+  justify-content: center;
+  background-color: rgb(24, 20, 20);
+  text-align: center;
+  overflow: visible;
+  max-width: 100%;
+  padding-bottom: 5%;
 }
 
 #headercontact {
-    display: grid; 
-    grid-template-columns: 1.25fr 2.5fr 0.5fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0% 0px; 
-    grid-template-areas: 
-    ". logofooter . socialiconsfooter"; 
-    justify-content: center; 
-    align-content: space-around; 
-    justify-items: center; 
-    align-items: center; 
-    width: auto;
-    height: 100px;
-    background-color: rgb(219, 197, 0);
-    text-align: center;
+  display: grid;
+  grid-template-columns: 1.25fr 2.5fr 0.5fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0% 0px;
+  grid-template-areas: ". logofooter . socialiconsfooter";
+  justify-content: center;
+  align-content: space-around;
+  justify-items: center;
+  align-items: center;
+  width: auto;
+  height: 100px;
+  background-color: rgb(219, 197, 0);
+  text-align: center;
 }
 
 #logofooter {
-    grid-area: logofooter;
-    overflow: hidden;
-    height: 70px;
+  grid-area: logofooter;
+  overflow: hidden;
+  height: 70px;
 }
 
 .footerimg {
-    height: 70px;
-    width: auto;
+  height: 70px;
+  width: auto;
 }
 
 #socialiconsfooter {
-   grid-area: socialiconsfooter;
+  grid-area: socialiconsfooter;
 }
 
 .iconfooter {
-    height: 40px;
-    width: 40px;
+  height: 40px;
+  width: 40px;
 }
 
 #companyname {
-    grid-area: company-name;
-    color: #cacaca;
-    margin-top: 5vh;
+  grid-area: company-name;
+  color: #cacaca;
+  margin-top: 5vh;
 }
 
 #companyname h4 {
-    font-size: 21px;
-    text-transform: uppercase;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: yellow;
 }
 
 #companyname p {
-    font-size: 19px;
-    line-height: 2;
+  font-size: 19px;
+  line-height: 2;
 }
 
 #companyadress {
-    grid-area: company-address;
-    color: #cacaca;
-    margin-top: 5vh;
+  grid-area: company-address;
+  color: #cacaca;
+  margin-top: 5vh;
 }
 
 #companyadress h4 {
-    font-size: 21px;
-    text-transform: uppercase;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: yellow;
 }
 
 #companyadress p {
-    font-size: 19px;
-    line-height: 2;
+  font-size: 19px;
+  line-height: 2;
 }
 
 #companymap {
-    grid-area: company-map;
+  grid-area: company-map;
 }
 
 #googleMap {
-    width: auto;
-    height: 30vh;
+  width: auto;
+  height: 30vh;
 }
