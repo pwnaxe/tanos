@@ -25,36 +25,37 @@
   margin-top: 10vh;
 }
 
-#gallery .photo {
-  width: 60vw;
+#gallery .slick-list {
+  width: 60%;
+  left: 20%;
 }
 
 #gallery .slick-next {
   background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/prawa%202.png");
   background-position: center;
-  width: 50px;
-  height: 100px;
+  width: 3rem;
+  height: 6rem;
   margin-right: 0%;
   border: 0;
   cursor: pointer;
   display: block;
   position: absolute;
-  right: 5vw;
-  top: 35vh;
+  right: 23.5%;
+  top: 40%;
 }
 
 #gallery .slick-prev {
   background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/lewa%202.png");
   background-position: center;
-  width: 50px;
-  height: 100px;
+  width: 3rem;
+  height: 6rem;
   margin-left: 0%;
   border: 0;
   cursor: pointer;
   display: block;
   position: absolute;
-  left: 5vw;
-  top: 35vh;
+  left: 23.5%;
+  top: 40%;
   z-index: 1;
 }
 

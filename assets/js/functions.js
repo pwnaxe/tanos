@@ -35,6 +35,9 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 3,
     centerMode: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    focusOnSelect: true,
   });
 
   var $hamburger = $(".hamburger");
