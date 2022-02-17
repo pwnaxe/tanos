@@ -27,7 +27,7 @@
   color: white;
   margin-left: 4vw;
   margin-right: 4vw;
-  font-size: 1.25vw;
+  font-size: 1.25rem;
 }
 
 .aboutush {
@@ -65,4 +65,14 @@
   padding-top: 0.1rem;
   text-align: center;
   transform: translate(90%, 0);
+}
+
+@media all and (max-width: 600px) {
+  .ceo2 {
+    right: 3rem;
+  }
+
+  .ceo1 {
+    left: 3rem;
+  }
 }

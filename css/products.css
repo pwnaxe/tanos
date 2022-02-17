@@ -39,19 +39,21 @@
 
 #ofertatext .slick-list {
   position: absolute;
-  width: 154em;
-  left: -22%;
+  width: 120em;
+  left: -9%;
+  padding: 0;
 }
 
 #slider-galeria {
   padding-top: 10vh;
+  padding-bottom: 5%;
 }
 
 #ofertatext .slick-next {
   background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/Prawa%201.png");
   background-position: center;
   width: 5vw;
-  height: 34.8em;
+  height: 27em;
   display: block;
   border: 0;
   cursor: pointer;
@@ -67,7 +69,7 @@
   background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/lewa%201.png");
   background-position: center;
   width: 5vw;
-  height: 34.8em;
+  height: 27em;
   display: block;
   border: 0;
   cursor: pointer;
