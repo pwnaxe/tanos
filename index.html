@@ -28,6 +28,25 @@
   <body>
     <div id="container">
       <div id="main">
+        <div class="navbaricon1">
+          <button
+            class="hamburger1 hamburger--spin"
+            type="button"
+            onclick="burgerFunction1()"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+          <div class="dropdown-content hidden" id="dropdown-links1">
+            <ul>
+              <li><a href="#aboutus">O nas</a></li>
+              <li><a href="#products">Oferta</a></li>
+              <li><a href="#gallery">Galeria</a></li>
+              <li><a href="#contact">Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
         <div id="menu">
           <ul>
             <li><a href="#aboutus" class="menu-links">O nas</a></li>
@@ -58,8 +77,11 @@
         </video>
         <img class="logo" src="./assets/image/Logo Tanos.png" />
       </div>
+
       <nav id="navbar" class="sticky">
-        <img class="logo-navbar" src="./assets/image/logo_białe (1).png" />
+        <a href="#top"
+          ><img class="logo-navbar" src="./assets/image/logo_białe (1).png"
+        /></a>
         <div class="navbaricon">
           <button
             class="hamburger hamburger--spin"
@@ -122,7 +144,7 @@
             rozbudowując nasz własny park maszynowy. <br /><br />
             Pracujemy i żyjemy według zasady "Sky is the limit", wszystko możemy
             osiągnąć, zbudować i zrobić, wyobraźnia klienta jest jedynym naszym
-            ograniczeniem. <br /><br />
+            ograniczeniem. <br /><br /><br />
             Zapraszamy do kontaktu i współpracy.
           </p>
           <div class="ceo1">
@@ -152,7 +174,7 @@
       <div id="gallery">
         <h1 class="galleryh">Galeria</h1>
         <p class="gallerytext"></p>
-        <div class="fade" id="slider">
+        <div class="single-item" id="slider">
           <img src="./assets/image/5.jpg" class="photo" />
           <img src="./assets/image/7.jpg" class="photo" />
           <img src="./assets/image/6.jpg" class="photo" />
@@ -191,21 +213,27 @@
       </div>
       <div id="contact">
         <div id="companyname">
-          <h4>Dane Firmy</h4>
+          <h4>Dane kontaktowe</h4>
           <p>
-            Tanos Sp. z o.o. <br />
-            Nip: 524-291-58-46 <br />
-            Konto bankowe Santander Bank Polska: <br />
+            Telefon:
+            <a href="tel: +48 571 277 223" class="links">+48 571 277 223</a>
+            <br />
+            Email:
+            <a href="mailto: biuro@tanosmotorsport.pl" class="links"
+              >biuro@tanosmotorsport.pl</a
+            >
+            <br />
+            Konto bankowe Santander Bank: <br />
             33 1090 1841 0000 0001 4784 8718
           </p>
         </div>
         <div id="companyadress">
-          <h4>Adres siedziby</h4>
+          <h4>Dane firmy</h4>
           <p>
-            Tanos Motorsport <br />
+            Tanos Sp. z o.o. <br />
+            Nip: 524-291-58-46 <br />
             ul. Płochocińska 175a <br />
             Warszawa 03-044 <br />
-            Polska
           </p>
         </div>
         <div id="companymap">

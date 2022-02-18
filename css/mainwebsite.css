@@ -118,3 +118,52 @@ li {
   height: 2rem;
   width: 2rem;
 }
+
+.navbaricon1 {
+  display: none;
+}
+
+@media all and (max-width: 1000px) {
+  .logo {
+    height: 88%;
+    width: auto;
+    top: 6rem;
+  }
+  #menu {
+    display: none;
+  }
+  #lang {
+    display: none;
+  }
+  #socialicons {
+    left: 2rem;
+    right: auto;
+  }
+  .video {
+    object-fit: cover;
+  }
+  .navbaricon1 {
+    width: 45px;
+    height: 45px;
+    display: block;
+    position: absolute;
+    right: 2.5rem;
+    top: 1.5rem;
+    padding: 0;
+  }
+  .hamburger1 {
+    width: 45px;
+    height: 45px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .navbaricon1 .dropdown-content {
+    background-color: transparent;
+    width: 4rem;
+    padding-top: 1rem;
+  }
+  .navbaricon1 li a:hover {
+    background-color: white;
+    color: #000000;
+  }
+}

@@ -52,7 +52,7 @@
 .dropdown-content {
   position: absolute;
   display: block;
-  width: 9.7vw;
+  width: 11.7rem;
   background-color: #383838;
   z-index: 1;
 }
@@ -67,7 +67,7 @@
   text-decoration: none;
   display: block;
   text-align: left;
-  font-size: 1.25vw;
+  font-size: 1.25rem;
 }
 
 .dropdown-content a:hover,
@@ -85,4 +85,10 @@
 
 .hidden {
   display: none;
+}
+
+@media all and (max-width: 1100px) {
+  .dropdown-content {
+    top: 2rem;
+  }
 }

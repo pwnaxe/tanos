@@ -18,7 +18,7 @@
   background-color: #252525e8;
   margin-left: 30%;
   margin-right: 30%;
-  padding-top: 6vh;
+  padding-top: 2vh;
   box-sizing: border-box;
 }
 
@@ -65,6 +65,19 @@
   padding-top: 0.1rem;
   text-align: center;
   transform: translate(90%, 0);
+}
+
+@media all and (max-width: 1400px) {
+  .aboutustext {
+    font-size: 1rem;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  #aboutusbox {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
 }
 
 @media all and (max-width: 600px) {

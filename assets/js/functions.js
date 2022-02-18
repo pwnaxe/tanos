@@ -1,33 +1,21 @@
-// document.addEventListener("DOMContentLoaded", function () {
-// window.addEventListener("scroll", navscroll);
-
-// var navbar = document.getElementById("navbar");
-// var sticky = navbar.offsetTop;
-
-// function navscroll() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky");
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
-// });
-
-// window.addEventListener("DOMContentLoaded", function () {
-// });
-
 $(document).ready(function () {
   myMap();
 
-  $(".fade").slick({
-    dots: false,
-    autoplay: true,
-    infinite: true,
-    appendArrows: slider,
-    centerMode: true,
-    speed: 500,
-    fade: true,
-    cssEase: "linear",
+  $(".single-item").slick({
+    variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          vertical: true,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          infinite: true,
+          focusOnSelect: true,
+        },
+      },
+    ],
   });
 
   $(".multiple-items").slick({
@@ -38,12 +26,17 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 2000,
     focusOnSelect: true,
+    variableWidth: true,
   });
 
   var $hamburger = $(".hamburger");
   $hamburger.on("click", function (e) {
     $hamburger.toggleClass("is-active");
-    // Do something else, like open/close menu
+  });
+
+  var $hamburger1 = $(".hamburger1");
+  $hamburger1.on("click", function (e) {
+    $hamburger1.toggleClass("is-active");
   });
 });
 
@@ -61,4 +54,9 @@ function myMap() {
 function burgerFunction() {
   const button = document.getElementById("dropdown-links");
   button.classList.toggle("hidden");
+}
+
+function burgerFunction1() {
+  const button1 = document.getElementById("dropdown-links1");
+  button1.classList.toggle("hidden");
 }

@@ -6,7 +6,7 @@
   padding-top: 8vh;
   grid-template-areas: ". company-name company-address company-map .";
   justify-content: center;
-  background-color: rgb(24, 20, 20);
+  background-color: #242424;
   text-align: center;
   overflow: visible;
   max-width: 100%;
@@ -90,4 +90,70 @@
 #googleMap {
   width: auto;
   height: 30vh;
+}
+
+.links {
+  color: yellow;
+  text-decoration: none;
+}
+
+@media all and (max-width: 1500px) {
+  #companymap {
+    margin-top: 2rem;
+    width: 20rem;
+    margin-left: 2rem;
+  }
+}
+
+@media all and (max-width: 1400px) {
+  #contact {
+    grid-template-areas: "company-name company-name company-address company-map company-map";
+  }
+
+  #companymap {
+    margin-top: 3rem;
+    width: 25rem;
+    margin-left: 3rem;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  #contact {
+    grid-template-areas: "company-name company-name company-address company-map company-map";
+  }
+
+  #companymap {
+    margin-top: 2rem;
+    width: 25rem;
+    margin-left: 3rem;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  #contact {
+    grid-template-areas: "company-name company-name company-address company-map company-map";
+  }
+
+  #companymap {
+    margin-top: 4rem;
+    width: 20rem;
+    margin-left: 3rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  #contact {
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      ". company-name ."
+      ". company-address ."
+      ". company-map .";
+  }
+
+  #companymap {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+  }
 }
