@@ -80,6 +80,22 @@
   }
 }
 
+@media all and (max-width: 1000px) {
+  #aboutusbox {
+    background-color: #3f3f3f;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .aboutustext {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .aboutush {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
 @media all and (max-width: 600px) {
   .ceo2 {
     right: 3rem;

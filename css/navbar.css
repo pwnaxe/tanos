@@ -92,3 +92,20 @@
     top: 2rem;
   }
 }
+
+@media all and (max-width: 1000px) {
+  .logo-navbar {
+    width: 10rem;
+    height: 2rem;
+    margin-top: 0.22rem;
+  }
+  #navbar {
+    grid-template-columns: 4fr 2rem 2rem 2rem 2rem 2rem 1rem;
+    grid-template-areas: "logo-navbar facebook-navbar instagram-navbar youtube-navbar . hamburger .";
+  }
+  .dropdown-content {
+    top: 3rem;
+    right: 0;
+    padding-left: 1rem;
+  }
+}
