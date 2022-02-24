@@ -37,6 +37,11 @@
   margin-right: 4vw;
   font-size: 7vh;
   font-style: italic;
+  margin-top: 3rem;
+}
+
+#mobileaboutus {
+  display: none;
 }
 
 .ceo1 {
@@ -46,11 +51,11 @@
   width: 12rem;
   height: 2rem;
   bottom: 5rem;
+  left: -10rem;
   font-size: 1rem;
   padding-bottom: 1rem;
   padding-top: 0.1rem;
   text-align: center;
-  transform: translate(-90%, 0);
 }
 .ceo2 {
   display: block;
@@ -59,12 +64,11 @@
   height: 2rem;
   width: 12rem;
   bottom: 5rem;
-  right: 0rem;
+  right: -10rem;
   font-size: 1rem;
   padding-bottom: 1rem;
   padding-top: 0.1rem;
   text-align: center;
-  transform: translate(90%, 0);
 }
 
 @media all and (max-width: 1400px) {
@@ -85,6 +89,8 @@
     background-color: #3f3f3f;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
+    padding-bottom: 2rem;
   }
   .aboutustext {
     margin-left: 3rem;
@@ -93,15 +99,55 @@
   .aboutush {
     margin-left: 3rem;
     margin-right: 3rem;
+    margin-top: 1rem;
   }
-}
-
-@media all and (max-width: 600px) {
   .ceo2 {
-    right: 3rem;
+    bottom: 24rem;
+    right: 7rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 1rem;
   }
 
   .ceo1 {
-    left: 3rem;
+    bottom: 46rem;
+    right: 7rem;
+    left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  #portrety {
+    display: block;
+  }
+  .maciej {
+    position: static;
+    width: 15rem;
+    height: 20rem;
+    left: auto;
+    right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    margin-top: 1rem;
+  }
+  .pawel {
+    position: static;
+    width: 15rem;
+    height: 20rem;
+    margin-top: 2rem;
+    object-fit: cover;
+  }
+  #mobileaboutus {
+    display: block;
+    height: 45rem;
+    width: auto;
+    padding-bottom: 0.3rem;
+  }
+  #signature {
+    display: none;
   }
 }

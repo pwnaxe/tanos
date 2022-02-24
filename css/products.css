@@ -13,6 +13,7 @@
   margin-left: 4.5%;
   margin-right: 4.5%;
   background-color: #5f5f5f;
+  padding-bottom: 2rem;
 }
 
 .productsh {
@@ -30,36 +31,39 @@
   color: white;
   margin-left: 10rem;
   margin-right: 10rem;
-  font-size: 1.25vw;
+  font-size: 2rem;
 }
 
 #ofertatext .slick-slide {
-  width: 50em;
-  height: 40em;
-  margin-top: 5em;
+  width: 60rem;
+  margin-top: 3rem;
+  margin-left: 5em;
+}
+
+.slick-slide .photo {
+  height: 35rem;
 }
 
 #ofertatext .slick-next {
   background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/Prawa%201.png");
   background-position: center;
   width: 5vw;
-  height: 34.4em;
+  height: 35rem;
   display: block;
   border: 0;
   cursor: pointer;
   padding: 0;
-
   position: absolute;
   right: -5.5%;
   z-index: 3;
-  top: 6em;
+  top: 3rem;
 }
 
 #ofertatext .slick-prev {
   background-image: url("http://beewilr.cluster031.hosting.ovh.net/zdjecia%20Jarek%20strona/strona%20it/lewa%201.png");
   background-position: center;
   width: 5vw;
-  height: 34.4em;
+  height: 35rem;
   display: block;
   border: 0;
   cursor: pointer;
@@ -67,5 +71,40 @@
   position: absolute;
   left: -5.5%;
   z-index: 3;
-  top: 6em;
+  top: 3rem;
+}
+
+@media all and (max-width: 1000px) {
+  #ofertatext {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #ofertatext .slick-prev {
+    height: 4rem;
+    width: 7rem;
+    left: 0;
+    object-fit: cover;
+    top: 26rem;
+  }
+  #ofertatext .slick-next {
+    height: 4rem;
+    width: 7rem;
+    right: 0;
+    top: 26rem;
+    object-fit: cover;
+  }
+  .productsh {
+    margin-left: 3rem;
+  }
+  .productstext {
+    font-size: 1rem;
+    margin-left: 3rem;
+  }
+  #ofertatext .slick-slider {
+    margin-top: -2rem;
+  }
+  .slick-slide .photo {
+    height: 25rem;
+    object-fit: scale-down;
+  }
 }

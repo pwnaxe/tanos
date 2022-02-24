@@ -3,19 +3,6 @@ $(document).ready(function () {
 
   $(".single-item").slick({
     variableWidth: false,
-    responsive: [
-      {
-        breakpoint: 1000,
-        settings: {
-          vertical: true,
-          arrows: false,
-          autoplay: true,
-          autoplaySpeed: 1000,
-          infinite: true,
-          focusOnSelect: true,
-        },
-      },
-    ],
   });
 
   $(".multiple-items").slick({
