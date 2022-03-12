@@ -84,6 +84,44 @@
     width: 7rem;
     left: 0;
     object-fit: cover;
+    top: 36rem;
+  }
+  #ofertatext .slick-next {
+    height: 4rem;
+    width: 7rem;
+    right: 0;
+    top: 36rem;
+    object-fit: cover;
+  }
+  .productsh {
+    margin-left: 3rem;
+    margin-top: 7rem;
+  }
+  .productstext {
+    font-size: 1rem;
+    margin-left: 3rem;
+    margin-top: 7rem;
+  }
+  #ofertatext .slick-slider {
+    margin-top: -2rem;
+  }
+  .slick-slide .photo {
+    height: 35rem;
+    object-fit: scale-down;
+    margin-top: 10rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  #ofertatext {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #ofertatext .slick-prev {
+    height: 4rem;
+    width: 7rem;
+    left: 0;
+    object-fit: cover;
     top: 26rem;
   }
   #ofertatext .slick-next {

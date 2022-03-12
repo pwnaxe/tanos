@@ -111,6 +111,45 @@
   .galleryh {
     margin-left: 3rem;
     text-align: left;
+    margin-top: 5rem;
+  }
+  .gallerytext {
+    text-align: left;
+    margin-left: 3rem;
+  }
+  #gallery2 {
+    display: block;
+    margin: 0;
+  }
+  .textgallery2 {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .imagegallery2 {
+    margin-left: 5rem;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .single-item {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    left: 0;
+    overflow: hidden;
+  }
+  .single-item .photo {
+    height: 25rem;
+  }
+  #gallery {
+    height: 70vh;
+  }
+  .galleryh {
+    margin-left: 3rem;
+    text-align: left;
   }
   .gallerytext {
     text-align: left;

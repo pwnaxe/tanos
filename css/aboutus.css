@@ -101,6 +101,77 @@
     margin-right: 3rem;
     margin-top: 1rem;
   }
+
+  .ceo2 {
+    bottom: 28rem;
+    right: 9.8rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  .ceo1 {
+    bottom: 28rem;
+    right: auto;
+    left: 9.8rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  #portrety {
+    display: block;
+  }
+  .maciej {
+    position: static;
+    width: 25rem;
+    height: 30rem;
+    left: auto;
+    right: auto;
+    margin-left: auto;
+    margin-right: 1rem;
+    object-fit: cover;
+    margin-top: 1rem;
+  }
+  .pawel {
+    position: static;
+    width: 25rem;
+    height: 30rem;
+    margin-top: 2rem;
+    object-fit: cover;
+    margin-left: auto;
+  }
+  #mobileaboutus {
+    display: block;
+    height: 45rem;
+    width: auto;
+    padding-bottom: 0rem;
+    margin-bottom: -5rem;
+  }
+  #signature {
+    display: none;
+  }
+}
+
+@media all and (max-width: 800px) {
+  #aboutusbox {
+    background-color: #3f3f3f;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding-bottom: 2rem;
+  }
+  .aboutustext {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .aboutush {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+  }
   .ceo2 {
     bottom: 24rem;
     right: 7rem;

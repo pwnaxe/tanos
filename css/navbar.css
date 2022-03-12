@@ -87,6 +87,12 @@
   display: none;
 }
 
+@media all and (max-width: 1400px) {
+  .dropdown-content {
+    top: 2.7rem;
+  }
+}
+
 @media all and (max-width: 1100px) {
   .dropdown-content {
     top: 2rem;
@@ -104,7 +110,7 @@
     grid-template-areas: "logo-navbar facebook-navbar instagram-navbar youtube-navbar . hamburger .";
   }
   .dropdown-content {
-    top: 3rem;
+    top: 5rem;
     right: 0;
     padding-left: 1rem;
   }
