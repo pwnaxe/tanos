@@ -84,13 +84,15 @@
     width: 7rem;
     left: 0;
     object-fit: cover;
-    top: 36rem;
+    top: auto;
+    bottom: 0;
   }
   #ofertatext .slick-next {
     height: 4rem;
     width: 7rem;
     right: 0;
-    top: 36rem;
+    top: auto;
+    bottom: 0;
     object-fit: cover;
   }
   .productsh {

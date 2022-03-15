@@ -8,7 +8,7 @@
 
 .galleryh {
   text-align: center;
-  font-size: 5vh;
+  font-size: 3rem;
   font-style: italic;
   margin-top: 3rem;
   font-weight: 500;
@@ -98,15 +98,17 @@
   .single-item {
     width: 100%;
     height: auto;
-    margin-top: 1rem;
     left: 0;
     overflow: hidden;
+    margin-top: 0;
   }
   .single-item .photo {
     height: 25rem;
+    margin-top: 3rem;
   }
   #gallery {
-    height: 70vh;
+    margin-bottom: 0;
+    height: 45rem;
   }
   .galleryh {
     margin-left: 3rem;
@@ -123,13 +125,26 @@
   }
   .textgallery2 {
     text-align: left;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
   .imagegallery2 {
-    margin-left: 5rem;
+    margin-left: 11rem;
     margin-right: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+  }
+  #gallery .slick-prev {
+    top: 20rem;
+    left: 0;
+  }
+  #gallery .slick-next {
+    top: 20rem;
+    right: 0;
+  }
+  .textgallery2 {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
   }
 }
 
@@ -143,6 +158,14 @@
   }
   .single-item .photo {
     height: 25rem;
+  }
+  #gallery .slick-prev {
+    top: 13rem;
+    left: 0;
+  }
+  #gallery .slick-next {
+    top: 13rem;
+    right: 0;
   }
   #gallery {
     height: 70vh;
@@ -161,12 +184,12 @@
   }
   .textgallery2 {
     text-align: left;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
   .imagegallery2 {
-    margin-left: 5rem;
+    margin-left: 10rem;
     margin-right: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
   }
 }

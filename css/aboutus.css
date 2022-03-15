@@ -155,26 +155,10 @@
   }
 }
 
-@media all and (max-width: 800px) {
-  #aboutusbox {
-    background-color: #3f3f3f;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    padding-bottom: 2rem;
-  }
-  .aboutustext {
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-  .aboutush {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 1rem;
-  }
+@media all and (max-width: 850px) {
   .ceo2 {
-    bottom: 24rem;
-    right: 7rem;
+    bottom: 20.5rem;
+    right: 7.5rem;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
@@ -182,17 +166,77 @@
   }
 
   .ceo1 {
-    bottom: 46rem;
-    right: 7rem;
-    left: auto;
+    bottom: 20.5rem;
+    right: auto;
+    left: 7.5rem;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
     padding-bottom: 1rem;
   }
 
-  #portrety {
+  .maciej {
+    position: static;
+    width: 20rem;
+    height: 25rem;
+    left: auto;
+    right: auto;
+    margin-left: auto;
+    margin-right: 4rem;
+    object-fit: cover;
+    margin-top: 1rem;
+  }
+  .pawel {
+    position: static;
+    width: 20rem;
+    height: 25rem;
+    margin-top: 2rem;
+    object-fit: cover;
+    margin-left: auto;
+  }
+  #mobileaboutus {
     display: block;
+    height: 36rem;
+    width: auto;
+    padding-bottom: 0rem;
+    margin-bottom: -5rem;
+  }
+  #signature {
+    display: none;
+  }
+
+  .aboutustext {
+    margin-bottom: 3rem;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .ceo1 {
+    left: 6rem;
+  }
+  .ceo2 {
+    right: 6rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .ceo2 {
+    bottom: 24rem;
+    right: 2.2rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  .ceo1 {
+    bottom: 24rem;
+    right: auto;
+    left: 2.2rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 1rem;
   }
   .maciej {
     position: static;
@@ -201,7 +245,7 @@
     left: auto;
     right: auto;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 2rem;
     object-fit: cover;
     margin-top: 1rem;
   }
@@ -213,12 +257,6 @@
     object-fit: cover;
   }
   #mobileaboutus {
-    display: block;
-    height: 45rem;
-    width: auto;
-    padding-bottom: 0.3rem;
-  }
-  #signature {
-    display: none;
+    height: 30rem;
   }
 }

@@ -144,7 +144,7 @@
 @media all and (max-width: 1000px) {
   #contact {
     grid-template-columns: 0.2fr 0.2fr 0.2fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr 0.7fr;
     grid-template-areas:
       ". company-name ."
       ". company-map ."
@@ -154,7 +154,7 @@
   #companymap {
     margin-left: auto;
     margin-right: auto;
-    width: 20rem;
+    width: 30rem;
   }
 
   #headercontact {

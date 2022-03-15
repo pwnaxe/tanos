@@ -176,3 +176,23 @@ li {
     color: #000000;
   }
 }
+
+@media all and (max-width: 850px) {
+  .logo {
+    height: 90%;
+  }
+  #main {
+    height: 100vh;
+    min-height: auto;
+  }
+}
+
+@media all and (max-width: 550px) {
+  .logo {
+    height: 85%;
+  }
+  #main {
+    height: 100vh;
+    min-height: auto;
+  }
+}
