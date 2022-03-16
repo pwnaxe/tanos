@@ -148,3 +148,12 @@
     object-fit: scale-down;
   }
 }
+@media all and (max-width: 600px) {
+  .productsh {
+    margin-top: 3rem;
+  }
+  .productstext {
+    margin-top: 3rem;
+    margin-bottom: -5rem;
+  }
+}
