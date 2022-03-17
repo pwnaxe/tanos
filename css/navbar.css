@@ -101,18 +101,25 @@
 
 @media all and (max-width: 1000px) {
   .logo-navbar {
-    width: 10rem;
-    height: 2rem;
+    width: 15rem;
+    height: 3rem;
     margin-top: 0.22rem;
   }
   #navbar {
-    grid-template-columns: 4fr 2rem 2rem 2rem 2rem 2rem 1rem;
+    grid-template-columns: 4fr 4rem 4rem 4rem 2rem 4rem 2rem;
     grid-template-areas: "logo-navbar facebook-navbar instagram-navbar youtube-navbar . hamburger .";
   }
   .dropdown-content {
     top: 5rem;
     right: 0;
     padding-left: 1rem;
+  }
+  .dropdown-content a {
+    font-size: 2rem;
+  }
+  #navbar .iconnavbar {
+    width: 35px;
+    height: 35px;
   }
 }
 
