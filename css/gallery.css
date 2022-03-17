@@ -88,6 +88,13 @@
   font-size: 2rem;
 }
 
+@media all and (max-width: 1500px) {
+  #gallery {
+    height: 50rem;
+    margin-bottom: 10rem;
+  }
+}
+
 @media all and (max-width: 1400px) {
   #gallery {
     height: 50rem;
@@ -191,5 +198,19 @@
     margin-left: 10rem;
     margin-right: auto;
     margin-bottom: 5rem;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #gallery .slick-prev {
+    top: 13rem;
+    left: 0;
+  }
+  #gallery .slick-next {
+    top: 13rem;
+    right: 0;
+  }
+  #gallery {
+    height: auto;
   }
 }
