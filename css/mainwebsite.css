@@ -187,7 +187,7 @@ li {
   .navbaricon1 li a:hover {
     background-color: white;
     color: #000000;
-    padding-right: 9.8rem;
+    width: 10.3rem;
   }
   .navbaricon1 .hamburger-box {
     width: 65px;
@@ -197,6 +197,12 @@ li {
     height: 3rem;
     width: 3rem;
     margin-right: 0.5rem;
+  }
+  .navbaricon1 .dropdown-content ul {
+    width: 10rem;
+  }
+  .navbaricon1 .dropdown-content li {
+    width: 10rem;
   }
 }
 
@@ -210,12 +216,80 @@ li {
   }
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 600px) {
   .logo {
     height: 85%;
   }
-  #main {
-    height: 100vh;
-    min-height: auto;
+  #lang a {
+    font-size: 1.25rem;
+  }
+  #socialicons {
+    left: 1.5rem;
+  }
+  .navbaricon1 {
+    width: 55px;
+    height: 55px;
+  }
+  .hamburger1 {
+    width: 55px;
+    height: 55px;
+  }
+  .navbaricon1 .hamburger-inner::before {
+    width: 2rem;
+    height: 0.2rem;
+  }
+  .navbaricon1 .hamburger-inner::after {
+    width: 2rem;
+    height: 0.2rem;
+  }
+  .navbaricon1 .hamburger-inner {
+    width: 2rem;
+    height: 0.2rem;
+  }
+  .navbaricon1 .hamburger-box {
+    width: 55px;
+    height: 55px;
+  }
+  .menuicons {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+  }
+  .navbaricon1 li a {
+    font-size: 1.25rem;
+  }
+  .navbaricon1 .dropdown-content ul {
+    width: 6rem;
+  }
+  .navbaricon1 .dropdown-content li {
+    width: 6rem;
+  }
+  .navbaricon1 .dropdown-content {
+    width: 6rem;
+  }
+  .navbaricon1 li a:hover {
+    width: 8.7rem;
+  }
+}
+@media all and (max-width: 450px) {
+  .logo {
+    height: 90%;
+  }
+  #socialicons {
+    left: 2.5rem;
+  }
+  .menuicons {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+  }
+  #lang a {
+    margin-right: 0;
+  }
+  .navbaricon1 {
+    right: 1rem;
+  }
+  .navbaricon1 li a:hover {
+    width: 7.5rem;
   }
 }

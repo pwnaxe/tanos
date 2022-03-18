@@ -121,6 +121,10 @@
     width: 35px;
     height: 35px;
   }
+  .dropdown-content a:hover,
+  .dropdown-content a:focus {
+    margin-left: -1rem;
+  }
 }
 
 @media all and (max-width: 800px) {
@@ -132,5 +136,22 @@
 @media all and (max-width: 600px) {
   .dropdown-content {
     top: 3rem;
+  }
+  .logo-navbar {
+    width: 10rem;
+    height: 2rem;
+    margin-top: 0.22rem;
+  }
+  #navbar .iconnavbar {
+    width: 25px;
+    height: 25px;
+  }
+  #navbar {
+    grid-template-columns: 4fr 2rem 2rem 2rem 1.5rem 2rem 1.5rem;
+    grid-template-areas: "logo-navbar facebook-navbar instagram-navbar youtube-navbar . hamburger .";
+  }
+  .navbaricon {
+    width: 40px;
+    height: 40px;
   }
 }
