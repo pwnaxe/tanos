@@ -293,3 +293,30 @@ li {
     width: 7.5rem;
   }
 }
+@media all and (max-width: 400px) {
+  .logo {
+    height: 85%;
+  }
+}
+@media all and (max-width: 300px) {
+  #socialicons {
+    left: 1rem;
+  }
+  .menuicons {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0rem;
+  }
+  #lang a {
+    font-size: 1rem;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #lang {
+    right: 4.5rem;
+  }
+  .navbaricon1 {
+    right: 0rem;
+    top: 1.3rem;
+  }
+}

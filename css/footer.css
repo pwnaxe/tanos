@@ -172,3 +172,15 @@
     top: 1rem;
   }
 }
+@media all and (max-width: 450px) {
+  #companymap {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .footerimg {
+    height: 4rem;
+    width: auto;
+  }
+}
