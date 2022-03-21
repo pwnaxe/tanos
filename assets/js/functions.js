@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  myMap();
+  initMap();
 
   $(".single-item").slick({
     variableWidth: false,
@@ -27,15 +27,16 @@ $(document).ready(function () {
   });
 });
 
-function myMap() {
-  const mapProp = {
-    center: new google.maps.LatLng(52.357667, 21.026999),
-    zoom: 9,
-  };
-  const map = new google.maps.Map(
-    document.getElementById("googleMap"),
-    mapProp
-  );
+function initMap() {
+  const tanosmap = { lat: 52.357856, lng: 21.028806 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 11,
+    center: tanosmap,
+  });
+  const marker = new google.maps.Marker({
+    position: tanosmap,
+    map: map,
+  });
 }
 
 function burgerFunction() {

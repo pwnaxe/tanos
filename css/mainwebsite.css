@@ -297,15 +297,8 @@ li {
   .logo {
     height: 85%;
   }
-}
-@media all and (max-width: 300px) {
   #socialicons {
-    left: 1rem;
-  }
-  .menuicons {
-    height: 2rem;
-    width: 2rem;
-    margin-right: 0rem;
+    left: 1.8rem;
   }
   #lang a {
     font-size: 1rem;
@@ -318,5 +311,23 @@ li {
   .navbaricon1 {
     right: 0rem;
     top: 1.3rem;
+  }
+  .menuicons {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.3rem;
+  }
+  .navbaricon1 li a:hover {
+    width: 6.5rem;
+  }
+}
+@media all and (max-width: 300px) {
+  #socialicons {
+    left: 1rem;
+  }
+  .menuicons {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0rem;
   }
 }

@@ -297,8 +297,9 @@
 }
 @media all and (max-width: 400px) {
   .ceo2 {
-    bottom: 29;
-    right: 5.7rem;
+    bottom: 32rem;
+    left: 5.45rem;
+    right: auto;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
@@ -306,9 +307,9 @@
   }
 
   .ceo1 {
-    top: 49rem;
+    top: 50rem;
     right: auto;
-    left: 5.8rem;
+    left: 5.45rem;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
@@ -317,13 +318,16 @@
   .pawel {
     display: block;
     position: absolute;
-    left: auto;
-    right: 4.2rem;
-    bottom: 30rem;
+    left: 4rem;
+    right: auto;
+    bottom: 33rem;
   }
   .maciej {
     display: block;
     position: absolute;
-    left: 4.3rem;
+    left: 4rem;
+  }
+  #mobileaboutus {
+    height: 54rem;
   }
 }

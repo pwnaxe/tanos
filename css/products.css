@@ -170,7 +170,7 @@
 }
 @media all and (max-width: 450px) {
   #products {
-    height: 50rem;
+    height: 48rem;
     min-height: auto;
   }
 }

@@ -87,7 +87,7 @@
   grid-area: company-map;
 }
 
-#googleMap {
+#map {
   width: auto;
   height: 30vh;
 }
@@ -179,8 +179,39 @@
 }
 
 @media (max-width: 400px) {
-  .footerimg {
-    height: 4rem;
+  #headercontact {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "logofooter"
+      "socialiconsfooter";
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    align-items: center;
     width: auto;
+    height: auto;
+    background-color: rgb(253, 205, 48);
+    text-align: center;
+  }
+  .footerimg {
+    height: 3rem;
+    width: auto;
+  }
+  #companymap {
+    width: 18rem;
+  }
+  .iconfooter {
+    height: 30px;
+    width: 30px;
+  }
+  #logofooter {
+    top: 1rem;
+  }
+  #socialiconsfooter {
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
   }
 }
