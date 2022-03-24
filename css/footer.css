@@ -175,6 +175,7 @@
 @media all and (max-width: 450px) {
   #companymap {
     width: 20rem;
+    display: inline-block;
   }
 }
 
@@ -213,5 +214,31 @@
     bottom: auto;
     left: auto;
     right: auto;
+  }
+}
+@media (max-width: 300px) {
+  #companymap {
+    width: 14rem;
+    margin-top: 2rem;
+  }
+  #contact {
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 0.7fr 0.7fr 0.7fr;
+    grid-template-areas:
+      ". company-name ."
+      ". company-map ."
+      ". company-address .";
+  }
+  #companyname p {
+    font-size: 0.8rem;
+  }
+  #companyname h4 {
+    font-size: 1rem;
+  }
+  #companyadress p {
+    font-size: 0.8rem;
+  }
+  #companyadress h4 {
+    font-size: 1rem;
   }
 }

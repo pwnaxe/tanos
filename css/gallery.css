@@ -214,3 +214,16 @@
     height: 45rem;
   }
 }
+@media all and (max-width: 300px) {
+  #gallery {
+    height: 42rem;
+  }
+  .galleryh {
+    margin-top: 2.5rem;
+  }
+  .gallerytext {
+    margin-right: 3rem;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+}

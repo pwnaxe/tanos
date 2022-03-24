@@ -157,20 +157,31 @@
   .dropdown-content a {
     font-size: 1.25rem;
   }
+  .navbaricon1 {
+    top: 2rem;
+  }
+  .navbaricon1 .hamburger-box {
+    width: 2rem;
+    height: 2rem;
+  }
+  .hamburger1 {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 @media all and (max-width: 300px) {
   .logo-navbar {
-    width: 8rem;
+    width: 7rem;
     height: 1.5rem;
     margin-top: 0.22rem;
   }
   #navbar {
     display: grid;
-    grid-template-columns: 4fr fr 4rem 2rem 2rem 2rem;
+    grid-template-columns: 4fr 2.5rem 2rem 2rem 2rem;
     grid-template-rows: 1fr;
     gap: 0px 0px;
-    grid-template-areas: "logo-navbar . hamburger facebook-navbar instagram-navbar youtube-navbar";
+    grid-template-areas: "logo-navbar hamburger facebook-navbar instagram-navbar youtube-navbar";
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -179,5 +190,8 @@
     max-width: 100%;
     z-index: 100;
     background-color: #383838;
+  }
+  .navbaricon {
+    width: 28px;
   }
 }

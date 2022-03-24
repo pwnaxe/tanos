@@ -174,3 +174,15 @@
     min-height: auto;
   }
 }
+@media (max-width: 300px) {
+  .productsh {
+    margin-top: 2rem;
+  }
+  .productstext {
+    margin-right: 3rem;
+  }
+  #products {
+    height: 44rem;
+    padding-bottom: 2rem;
+  }
+}
