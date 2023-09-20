@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import Box from "@mui/material/Box";
 import Image from "next/image";
 import Drawer from "@mui/material/Drawer";
@@ -11,17 +12,8 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemButton from "@mui/material/ListItemButton";
 import SocialMedia from "./Socialmedia";
-import { NextRouter } from "next/router";
 
-export default function Top({
-  setActiveComponent,
-}: {
-  setActiveComponent: Function;
-}) {
-  const handleNavigation = (componentName: string) => {
-    setActiveComponent(componentName);
-  };
-
+export default function Top() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const toggleDrawer =
@@ -40,19 +32,28 @@ export default function Top({
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
     >
-      {["O NAS", "SKLEP", "GALERIA", "KONTAKT"].map((text, index) => {
-        const componentNames = ["AboutUs", "Store", "Gallery", "Contact"];
-        return (
-          <ListItemButton
-            key={text}
-            onClick={() => handleNavigation(componentNames[index])}
-          >
-            <ListItemText
-              primary={<span style={{ color: "white" }}>{text}</span>}
-            />
+      <List>
+        <Link href="/AboutUs" passHref>
+          <ListItemButton component="a">
+            <ListItemText primary="O NAS" sx={{ color: "white" }} />
           </ListItemButton>
-        );
-      })}
+        </Link>
+        <Link href="/Store" passHref>
+          <ListItemButton component="a">
+            <ListItemText primary="SKLEP" sx={{ color: "white" }} />
+          </ListItemButton>
+        </Link>
+        <Link href="/Gallery" passHref>
+          <ListItemButton component="a">
+            <ListItemText primary="GALERIA" sx={{ color: "white" }} />
+          </ListItemButton>
+        </Link>
+        <Link href="/Contact" passHref>
+          <ListItemButton component="a">
+            <ListItemText primary="KONTAKT" sx={{ color: "white" }} />
+          </ListItemButton>
+        </Link>
+      </List>
     </Box>
   );
 
@@ -83,18 +84,18 @@ export default function Top({
           }}
         >
           <li style={{ listStyleType: "none" }}>
-            <a href="#O nas" className="nav-link">
+            <Link href="/AboutUs" className="nav-link">
               O NAS
-            </a>
-            <a href="#Sklep" className="nav-link">
+            </Link>
+            <Link href="/Store" className="nav-link">
               SKLEP
-            </a>
-            <a href="#Galeria" className="nav-link">
+            </Link>
+            <Link href="/Gallery" className="nav-link">
               GALERIA
-            </a>
-            <a href="#Kontakt" className="nav-link">
+            </Link>
+            <Link href="/Contact" className="nav-link">
               KONTAKT
-            </a>
+            </Link>
           </li>
         </Box>
         <Box
