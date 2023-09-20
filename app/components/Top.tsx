@@ -179,7 +179,15 @@ export default function Top({
             style={{ zIndex: 5 }}
           />
         </Box>
-        <Box sx={{ position: "absolute", top: 37, right: 50, zIndex: 5 }}>
+        <Box
+          sx={{
+            position: "absolute",
+            bottom: { xs: 37, xl: "auto" },
+            top: { xs: "auto", xl: 37 },
+            right: 50,
+            zIndex: 5,
+          }}
+        >
           <SocialMedia />
         </Box>
       </>

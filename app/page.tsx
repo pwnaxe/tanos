@@ -10,7 +10,7 @@ import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 
 export default function Page() {
-  const [activeComponent, setActiveComponent] = useState("AboutUs");
+  const [activeComponent, setActiveComponent] = useState("Top");
 
   return (
     <div>
