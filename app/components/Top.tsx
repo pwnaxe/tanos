@@ -12,6 +12,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemButton from "@mui/material/ListItemButton";
 import SocialMedia from "./Socialmedia";
+import AboutUs from "./AboutUs";
 
 export default function Top() {
   const [drawerOpen, setDrawerOpen] = useState(false);
