@@ -7,8 +7,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import List from "@mui/material/List";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemButton from "@mui/material/ListItemButton";
+import SocialMedia from './SocialMedia';
 
-const Layout1 = ({ children }) => {
+const Layout2 = ({ children }) => {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const toggleDrawer = (open) => (event) => {
@@ -61,44 +62,31 @@ const Layout1 = ({ children }) => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            height: "100%",
             position: "relative",
+            backgroundColor: "#3D3D3B",
+            width: "100vw",
+            height: "7vh",
+            top: 0,
+            zIndex: 4,
           }}
         >
           <Box
             sx={{
-              display: { xs: "none", lg: "flex" },
               position: "absolute",
-              top: 50,
-              right: "15%",
-              zIndex: 4,
-              fontSize: "2rem",
-              fontWeight: "500",
-              "@media (max-width:1300px)": {
-                right: "10%",
-              },
+              top: '50%',
+              left: '5%',
+              transform: 'translateY(-50%)',
+              zIndex: 5,
             }}
           >
-            <li style={{ listStyleType: "none" }}>
-              <Link to="/AboutUs" className="nav-link">
-                O NAS
-              </Link>
-              <Link to="/Store" className="nav-link">
-                SKLEP
-              </Link>
-              <Link to="/Gallery" className="nav-link">
-                GALERIA
-              </Link>
-              <Link to="/Contact" className="nav-link">
-                KONTAKT
-              </Link>
-            </li>
+            <img src="/assets/logo_białe.png" alt="Tanos Motorsport" style={{ height: "100%", width: "20vw", objectFit: 'cover' }} />
           </Box>
           <Box
             sx={{
-              display: { xs: "flex", lg: "none" },
+              display: 'flex',
+              alignItems: 'center',
               position: "absolute",
-              top: 50,
+              top: 0,
               right: "5%",
               zIndex: 4,
             }}
@@ -112,6 +100,7 @@ const Layout1 = ({ children }) => {
             >
               <MenuIcon sx={{ fontSize: "3rem", fontWeight: "bold" }} />
             </IconButton>
+            <SocialMedia />
             <Drawer
               anchor="right"
               open={drawerOpen}
@@ -132,4 +121,4 @@ const Layout1 = ({ children }) => {
   );
 };
 
-export default Layout1;
+export default Layout2;

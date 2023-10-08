@@ -39,6 +39,11 @@ body {
   opacity: 1;
 }
 
+.linkdesc {
+  text-decoration: none;
+  color: white;
+}
+
 .linkdec {
   text-decoration: none;
 }
@@ -50,4 +55,25 @@ body {
 
 .linkdec1:hover .linkdec2 {
   color: black !important;
+}
+
+.background-image1,
+.background-image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.background-image1 {
+  background: url("assets/tanos-049.jpg") no-repeat center center;
+  background-size: fill;
+}
+
+.background-image2 {
+  left: 50%;
+  background: url("assets/tanos-037.jpg") no-repeat center center;
+  background-size: fill;
 }
