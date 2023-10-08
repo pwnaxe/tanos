@@ -1,0 +1,53 @@
+body {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 16px;
+  padding: 60px 30px 12px 15px;
+  position: relative;
+  z-index: 1;
+  transition: color 1.5s;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: -1;
+  transform: skewX(0deg);
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.nav-link:hover::before {
+  transform: skewX(-20deg);
+  opacity: 1;
+}
+
+.linkdec {
+  text-decoration: none;
+}
+
+.linkdec1:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+.linkdec1:hover .linkdec2 {
+  color: black !important;
+}
