@@ -8,8 +8,8 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemButton from "@mui/material/ListItemButton";
 
 const pages = [
-  { title: 'O NAS', id: 'home' },
-  { title: 'SKLEP', id: 'aboutUs' },
+  { title: 'O NAS', id: 'aboutUs' },
+  { title: 'SKLEP', id: 'store' },
   { title: 'GALERIA', id: 'gallery' },
   { title: 'KONTAKT', id: 'contact' },
 ];
@@ -32,7 +32,7 @@ export default function Layout1() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    toggleDrawer(false)(null);
+    toggleDrawer(false)({ type: '', key: '' });
   };
 
   const list = (

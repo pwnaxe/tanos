@@ -9,8 +9,8 @@ import ListItemButton from "@mui/material/ListItemButton";
 import SocialMedia from "./SocialMedia";
 
 const pages = [
-  { title: 'O NAS', id: 'home' },
-  { title: 'SKLEP', id: 'aboutUs' },
+  { title: 'O NAS', id: 'aboutUs' },
+  { title: 'SKLEP', id: 'store' },
   { title: 'GALERIA', id: 'gallery' },
   { title: 'KONTAKT', id: 'contact' },
 ];
@@ -33,7 +33,7 @@ export default function Layout2() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    toggleDrawer(false)(null);
+    toggleDrawer(false)({ type: '', key: '' });
   };
 
   const list = (
@@ -54,7 +54,7 @@ export default function Layout2() {
   );
 
   return (
-    <nav sx={{ position: 'sticky' }}>
+    <nav>
       <Box
         sx={{
           display: "flex",

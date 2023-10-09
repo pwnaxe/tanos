@@ -3,7 +3,8 @@ import './App.css';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Store from './components/Store';
-import Box from '@mui/material/Box';
+import Gallery from './components/Gallery';
+import Contact from './components/Contact';
 
 const App = () => {
   return (
@@ -11,6 +12,8 @@ const App = () => {
       <Home />
       <AboutUs />
       <Store />
+      <Gallery />
+      <Contact />
     </>
   );
 };
