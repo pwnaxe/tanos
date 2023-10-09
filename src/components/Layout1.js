@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
@@ -8,7 +7,14 @@ import List from "@mui/material/List";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemButton from "@mui/material/ListItemButton";
 
-const Layout1 = ({ children }) => {
+const pages = [
+  { title: 'O NAS', id: 'home' },
+  { title: 'SKLEP', id: 'aboutUs' },
+  { title: 'GALERIA', id: 'gallery' },
+  { title: 'KONTAKT', id: 'contact' },
+];
+
+export default function Layout1() {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const toggleDrawer = (open) => (event) => {
@@ -21,6 +27,14 @@ const Layout1 = ({ children }) => {
     setDrawerOpen(open);
   };
 
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    toggleDrawer(false)(null);
+  };
+
   const list = (
     <Box
       sx={{ width: 250, bgcolor: "black" }}
@@ -29,107 +43,80 @@ const Layout1 = ({ children }) => {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        <Link to="/AboutUs" className="linkdec">
-          <ListItemButton className="linkdec1">
-            <ListItemText primary="O NAS" className="linkdec2" sx={{ color: "white" }} />
+        {pages.map((page) => (
+          <ListItemButton onClick={() => handleScroll(page.id)} key={page.id}>
+            <ListItemText primary={page.title} sx={{ color: "white" }} />
           </ListItemButton>
-        </Link>
-        <Link to="/Store" className="linkdec">
-          <ListItemButton className="linkdec1">
-            <ListItemText primary="SKLEP" className="linkdec2" sx={{ color: "white" }} />
-          </ListItemButton>
-        </Link>
-        <Link to="/Gallery" className="linkdec">
-          <ListItemButton className="linkdec1">
-            <ListItemText primary="GALERIA" className="linkdec2" sx={{ color: "white" }} />
-          </ListItemButton>
-        </Link>
-        <Link to="/Contact" className="linkdec">
-          <ListItemButton className="linkdec1">
-            <ListItemText primary="KONTAKT" className="linkdec2" sx={{ color: "white" }} />
-          </ListItemButton>
-        </Link></List>
+        ))}
+      </List>
     </Box>
   );
 
   return (
-    <div>
-      <nav>
+    <nav>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+          height: "100%",
+          position: "relative",
+        }}
+      >
         <Box
           sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "100%",
-            position: "relative",
+            display: { xs: "none", lg: "flex" },
+            flexDirection: "row",
+            position: "absolute",
+            top: 0,
+            right: "15%",
+            zIndex: 4,
+            fontSize: "2rem",
+            fontWeight: "500",
+            "@media (max-width:1300px)": {
+              right: "10%",
+            },
           }}
         >
-          <Box
-            sx={{
-              display: { xs: "none", lg: "flex" },
-              position: "absolute",
-              top: 50,
-              right: "15%",
-              zIndex: 4,
-              fontSize: "2rem",
-              fontWeight: "500",
-              "@media (max-width:1300px)": {
-                right: "10%",
-              },
-            }}
-          >
-            <li style={{ listStyleType: "none" }}>
-              <Link to="/AboutUs" className="nav-link">
-                O NAS
-              </Link>
-              <Link to="/Store" className="nav-link">
-                SKLEP
-              </Link>
-              <Link to="/Gallery" className="nav-link">
-                GALERIA
-              </Link>
-              <Link to="/Contact" className="nav-link">
-                KONTAKT
-              </Link>
-            </li>
-          </Box>
-          <Box
-            sx={{
-              display: { xs: "flex", lg: "none" },
-              position: "absolute",
-              top: 50,
-              right: "5%",
-              zIndex: 4,
-            }}
-          >
-            <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              onClick={toggleDrawer(true)}
-              sx={{ fontSize: "3rem", color: "white" }}
-            >
-              <MenuIcon sx={{ fontSize: "3rem", fontWeight: "bold" }} />
-            </IconButton>
-            <Drawer
-              anchor="right"
-              open={drawerOpen}
-              onClose={toggleDrawer(false)}
-              PaperProps={{
-                style: { backgroundColor: "transparent", height: "auto" },
-              }}
-            >
-              {list}
-            </Drawer>
-          </Box>
+          <ul style={{ listStyleType: "none", display: "flex", flexDirection: "row", margin: 0 }}>
+            {pages.map((page) => (
+              <li className="nav-link" onClick={() => handleScroll(page.id)} key={page.id}>
+                {page.title}
+              </li>
+            ))}
+          </ul>
         </Box>
-      </nav>
-      <main>
-        {children}
-      </main>
-    </div>
+        <Box
+          sx={{
+            display: { xs: "flex", lg: "none" },
+            position: "absolute",
+            top: 50,
+            right: "5%",
+            zIndex: 4,
+          }}
+        >
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            onClick={toggleDrawer(true)}
+            sx={{ fontSize: "3rem", color: "white" }}
+          >
+            <MenuIcon sx={{ fontSize: "3rem", fontWeight: "bold" }} />
+          </IconButton>
+          <Drawer
+            anchor="right"
+            open={drawerOpen}
+            onClose={toggleDrawer(false)}
+            PaperProps={{
+              style: { backgroundColor: "transparent", height: "auto" },
+            }}
+          >
+            {list}
+          </Drawer>
+        </Box>
+      </Box>
+    </nav>
   );
 };
-
-export default Layout1;

@@ -1,15 +1,19 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import SocialMedia from "./SocialMedia";
+import Layout1 from "./Layout1";
 
 export default function Page() {
   return (
-    <>
+    <Box sx={{
+      width: "100%",
+      height: "100vh",
+      zIndex: -1,
+    }}>
+      <Layout1 />
       <Box
         sx={{
           position: "absolute",
-          top: 0,
-          left: 0,
           width: "100%",
           height: "100vh",
           backgroundColor: "rgba(0, 0, 0, 0.5)",
@@ -75,6 +79,6 @@ export default function Page() {
       >
         <SocialMedia />
       </Box>
-    </>
+    </Box>
   );
 }

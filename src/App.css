@@ -1,16 +1,16 @@
 body {
   text-align: center;
-  width: 100vw;
   height: 100vh;
-  overflow-y: scroll;
+  width: 100vw;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .nav-link {
   color: white;
   text-decoration: none;
   margin: 0 16px;
-  padding: 60px 30px 12px 15px;
+  padding: 45px 30px 12px 15px;
   position: relative;
   z-index: 1;
   transition: color 1.5s;
@@ -55,25 +55,4 @@ body {
 
 .linkdec1:hover .linkdec2 {
   color: black !important;
-}
-
-.background-image1,
-.background-image2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100vh;
-  z-index: -1;
-}
-
-.background-image1 {
-  background: url("assets/tanos-049.jpg") no-repeat center center;
-  background-size: fill;
-}
-
-.background-image2 {
-  left: 50%;
-  background: url("assets/tanos-037.jpg") no-repeat center center;
-  background-size: fill;
 }
