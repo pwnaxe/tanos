@@ -12,7 +12,7 @@ export default function AboutUs() {
           position: 'absolute',
           transform: 'translateX(15%)',
           width: "50%",
-          height: "100vh",
+          height: "100%",
           objectFit: "cover",
           zIndex: 1,
         }} />
@@ -50,15 +50,28 @@ export default function AboutUs() {
             transform: 'translateX(-50%)',
             width: "60%",
             height: "100vh",
-            backgroundColor: "rgba(28, 28, 28, 0.7)",
+            minHeight: '100%',
+            backgroundColor: "rgba(28, 28, 28, 0.9)",
             zIndex: 3,
             padding: '0rem 2rem 0rem 2rem'
           }}
         >
-          <Typography variant="h3" sx={{ color: "white", textAlign: "center", mt: 10 }}>
+          <Typography variant="h4" sx={{ color: "white", textAlign: "center", mt: 10 }}>
             O NAS
           </Typography>
-          <Typography variant="h6" sx={{ color: "white", lineHeight: 1.6, paragraphSpacing: 3, mx: 2 }}>
+          <Typography sx={{
+            color: "white",
+            lineHeight: 1.6,
+            paragraphSpacing: 3,
+            mx: 2,
+            fontSize: {
+              xs: '0.6rem',
+              sm: '0.7rem',
+              md: '0.8rem',
+              lg: '1.1rem',
+              xl: '1.5rem',
+            }
+          }}>
             <strong>W Tanos Motorsport</strong> zajmujemy się dostarczaniem i montowaniem najwyższej jakości produktów, aby poprawić zarówno osiągi jak i niezawodność w sportach motorowych i na drogach. Ponadto podejmujemy się kompleksowych modyfikacji aut. Każdego klienta traktujemy indywidualnie, a każdy projekt wyceniamy opierając się na oczekiwaniach klienta, wybranych lub sugerowanych częściach i stopniu modyfikacji.
             <br /><br />
             Dzięki latom doświadczeń zdobytych w firmach zajmujących się produkcją części i budową samochodów sportowych, dostarczamy naszym klienton najnowsze i najlepsze rozwiązania i produkty od wielu lat. Nasza pasja, oddanie i dokładność pozwalają cieszyć nam się zaufaniem i renomą w branży.
@@ -72,7 +85,7 @@ export default function AboutUs() {
           position: 'absolute',
           left: 0,
           width: "60%",
-          height: "100vh",
+          height: "100%",
           objectFit: "cover",
           zIndex: 1,
         }} />

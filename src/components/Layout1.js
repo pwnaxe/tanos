@@ -28,6 +28,10 @@ export default function Layout1() {
   };
 
   const handleScroll = (id) => {
+    if (id === 'store') {
+      window.location.href = 'https://sklep.tanosmotorsport.pl';
+      return;
+    }
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -73,6 +77,7 @@ export default function Layout1() {
             right: "15%",
             zIndex: 4,
             fontSize: "2rem",
+            cursor: "pointer",
             fontWeight: "500",
             "@media (max-width:1300px)": {
               right: "10%",

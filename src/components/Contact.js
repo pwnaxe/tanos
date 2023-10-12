@@ -1,26 +1,51 @@
 import React from "react";
-import Layout2 from "./Layout2";
+import Layout3 from "./Layout3";
+import { Box, Typography, Grid } from "@mui/material";
+import ContactForm from "./Contactform";
 
 export default function Contact() {
   return (
     <>
-      <Layout2 />
-      <div id="contact" style={{ height: "100vh", backgroundColor: "green" }}>
-        Contact
-      </div>
-
+      <Layout3 />
+      <div id="contact">
+        <Box sx={{ padding: 15 }}>
+          <Grid container spacing={3}>
+            <Grid item xs={12} md={5}>
+              <ContactForm />
+            </Grid>
+            <Grid item xs={12} md={3}>
+              <Typography variant="h6" sx={{ color: '#FFD700' }}>
+                DANE FIRMY
+              </Typography>
+              <Typography variant="body1">
+                Tanos Sp.z o.o.
+              </Typography>
+              <Typography variant="body1">
+                NIP: 524-291-58-46
+              </Typography>
+              <Typography variant="body1">
+                ul. Płochocińska 175a
+              </Typography>
+              <Typography variant="body1">
+                Warszawa 03-044
+              </Typography>
+            </Grid>
+            <Grid item xs={12} md={4}>
+              <div style={{ height: '400px', width: '100%' }}>
+                <iframe
+                  title="Mapa Google"
+                  src="https://www.google.com/maps/embed?..."
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </Grid>
+          </Grid>
+        </Box>
+      </div >
     </>
   );
 }
-
-// Kontakt
-// Tanos Sp.z o.o.
-//   Nip: 524 - 291 - 58 - 46
-// ul.Płochocińska 175a
-// Warszawa 03-044
-
-// Telefon: +48 571 277 223
-// E - mail: contact @tanosmotorsport.pl
-// Facebook: https://www.facebook.com/tanos.motorsport
-
-// Wysyłamy do Wielkiej Brytanii, Niemiec i innych krajów europejskich! Zapraszamy wszystkich klientów do zakupów w naszym sklepie internetowym. Posiadamy ogromną ilość produktów i usług dostępnych w bardzo atrakcyjnych cenach. Podejmujemy się również nietypowych zleceń i zawsze chętnie omówimy nawet najtrudniejsze projekty. Jakieś pytania? Skontaktuj się z nami (angielski, niemiecki):
