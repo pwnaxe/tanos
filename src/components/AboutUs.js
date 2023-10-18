@@ -16,47 +16,24 @@ export default function AboutUs() {
           objectFit: "cover",
           zIndex: 1,
         }} />
-        <Box sx={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          position: 'absolute',
-          width: '100%',
-          bottom: 0,
-          zIndex: 13
-        }}>
-          <Box sx={{
-            backgroundColor: 'rgba(0,0,0,0.8)',
-            color: 'white',
-            padding: '1rem',
-            textAlign: 'center'
-          }}>
-            Maciej <br /> Kamiński
-          </Box>
-          <Box sx={{
-            backgroundColor: 'rgba(0,0,0,0.8)',
-            color: 'white',
-            padding: '1rem 2rem 1rem 1rem',
-            textAlign: 'center'
-          }}>
-            Paweł <br /> Gołębiewski
-          </Box>
-        </Box>
         <Box
           sx={{
             position: "absolute",
             left: '50%',
             transform: 'translateX(-50%)',
-            width: "60%",
-            height: "100vh",
+            width: "50%",
+            maxheight: "100%",
             minHeight: '100%',
             backgroundColor: "rgba(28, 28, 28, 0.9)",
             zIndex: 3,
-            padding: '0rem 2rem 0rem 2rem'
+            padding: '0rem 3rem 0rem 3rem',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            alignItems: 'center'
           }}
         >
-          <Typography variant="h4" sx={{ color: "white", textAlign: "center", mt: 10 }}>
+          <Typography variant="h4" sx={{ color: "white", textAlign: "center", mt: 15, mb: 5 }}>
             O NAS
           </Typography>
           <Typography sx={{
@@ -64,13 +41,10 @@ export default function AboutUs() {
             lineHeight: 1.6,
             paragraphSpacing: 3,
             mx: 2,
-            fontSize: {
-              xs: '0.6rem',
-              sm: '0.7rem',
-              md: '0.8rem',
-              lg: '1.1rem',
-              xl: '1.5rem',
-            }
+            fontSize: { xs: '0.7rem', sm: '0.8rem', md: '0.95rem', lg: '1rem', xl: '1.1rem' },
+            flexGrow: 1,
+            mt: 2,
+            mb: 2
           }}>
             <strong>W Tanos Motorsport</strong> zajmujemy się dostarczaniem i montowaniem najwyższej jakości produktów, aby poprawić zarówno osiągi jak i niezawodność w sportach motorowych i na drogach. Ponadto podejmujemy się kompleksowych modyfikacji aut. Każdego klienta traktujemy indywidualnie, a każdy projekt wyceniamy opierając się na oczekiwaniach klienta, wybranych lub sugerowanych częściach i stopniu modyfikacji.
             <br /><br />
@@ -79,6 +53,7 @@ export default function AboutUs() {
             Zapraszamy na naszą <em>stronę na Facebooku</em>, gdzie możecie Państwo śledzić nasze poczynania na bierząco. Korzystając z najnowszych technologi maszyn CNC i skanowania 3D, budujemy samochody spełniając marzenia naszych klientów i rozbudowując nasz własny park maszynowy.
             <br /><br />
             Pracujemy i żyjemy według zasady <strong>“Sky is the limit”</strong>, wszystko możemy osiągnąć, zbudować i zrobić, wyobraźnia klienta jest jedynym naszym ograniczeniem.
+            <br /><br /> <strong>Pozdrawiamy, Paweł Gołębiewski i Maciej Kamiński</strong>
           </Typography>
         </Box>
         <img src="/assets/tanos-049.jpg" alt="aboutUs" style={{

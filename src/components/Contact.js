@@ -34,7 +34,7 @@ export default function Contact() {
               <div style={{ height: '400px', width: '100%' }}>
                 <iframe
                   title="Mapa Google"
-                  src="https://www.google.com/maps/embed?..."
+                  src="https://www.google.com/maps/embed/v1/view?key=AIzaSyB8WoROze97etvZtXpwTrkd6Eh03osTOCg&center=52.2692,20.9982&zoom=16"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

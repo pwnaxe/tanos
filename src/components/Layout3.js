@@ -75,7 +75,7 @@ export default function Layout3() {
             zIndex: 5,
           }}
         >
-          <img src="/assets/logo_białe.png" alt="Tanos Motorsport" style={{ height: "100%", width: "30vw", objectFit: 'cover' }} />
+          {/* <img src="/assets/logo_białe.png" alt="Tanos Motorsport" style={{ height: "100%", width: "30vw", objectFit: 'cover' }} /> */}
         </Box>
         <Box
           sx={{
