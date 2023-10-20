@@ -69,6 +69,11 @@ body {
   position: absolute;
   top: 10%;
 }
+@media (max-width: 600px) {
+  .swiper {
+    height: 20vh;
+  }
+}
 
 .swiper-slide {
   background-position: center;
@@ -83,10 +88,6 @@ body {
 }
 
 #contact {
-  background-color: #3d3d3b;
+  background-color: #495057;
   color: #ffffff;
-}
-
-#aboutUs img {
-  display: none;
 }

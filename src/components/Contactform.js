@@ -8,7 +8,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     warning: {
-      main: '#000000',
+      main: '#adb5bd',
     },
   },
 });
@@ -44,7 +44,7 @@ export default function ContactForm() {
               InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
-                    <PersonIcon color="action" />
+                    <PersonIcon color="warning" />
                   </InputAdornment>
                 ),
               }}
@@ -63,7 +63,7 @@ export default function ContactForm() {
               InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
-                    <EmailIcon color="action" />
+                    <EmailIcon color="warning" />
                   </InputAdornment>
                 ),
               }}
@@ -86,7 +86,7 @@ export default function ContactForm() {
               InputProps={{
                 startAdornment: (
                   <InputAdornment position="start">
-                    <MessageIcon color="action" />
+                    <MessageIcon color="warning" />
                   </InputAdornment>
                 ),
               }}

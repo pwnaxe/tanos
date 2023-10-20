@@ -9,7 +9,7 @@ export default function Gallery() {
       <Layout2 />
       <div id="gallery" style={{ minHeight: "100vh", height: 'auto', backgroundColor: "white" }}>
         <Typography variant="h4" sx={{ mt: 15, }}>
-          NASZA GALERIA
+          <strong>NASZA GALERIA</strong>
         </Typography>
         <Typography variant="h6" sx={{ m: 5, }}>
           Odkryj naszą pasję do motorsportu poprzez unikalne ujęcia naszych prac. <br /> Prezentujemy wysokiej jakości komponenty, od zaawansowanych systemów zawieszenia po precyzyjnie wykonane hamulce ręczne i klatki bezpieczeństwa. <br /><strong> Każdy element jest wynikiem naszego zaangażowania, doświadczenia i ciągłego dążenia do perfekcji.</strong>
