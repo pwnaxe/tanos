@@ -58,32 +58,20 @@ export default function Layout3() {
       <Box
         sx={{
           display: "flex",
-          flexDirection: "column",
           alignItems: "center",
-          justifyContent: "center",
-          position: "absolute",
+          justifyContent: "space-between",
           backgroundColor: "#FFD700",
           width: "100vw",
           height: "10vh",
           zIndex: 4,
         }}
       >
-        <Box
-          sx={{
-            position: "absolute",
-            left: "5%",
-            zIndex: 5,
-          }}
-        >
-          <img src="/assets/logo_szare.png" alt="Tanos Motorsport" style={{ height: "100%", width: "30vw", objectFit: 'cover' }} />
-        </Box>
+        <img src="/assets/logo_szare.png" alt="Tanos Motorsport" style={{ width: "20vw" }} />
+
         <Box
           sx={{
             display: 'flex',
             alignItems: 'center',
-            position: "absolute",
-            right: "5%",
-            zIndex: 4,
           }}
         >
           <IconButton
@@ -91,7 +79,7 @@ export default function Layout3() {
             color="inherit"
             aria-label="menu"
             onClick={toggleDrawer(true)}
-            sx={{ fontSize: "3rem", color: "#3d3d3b" }}
+            sx={{ fontSize: "3rem", color: "#3d3d3b", mr: 2 }}
           >
             <MenuIcon sx={{ fontSize: "3rem", fontWeight: "bold" }} />
           </IconButton>

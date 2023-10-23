@@ -7,7 +7,7 @@ export default function Gallery() {
   return (
     <>
       <Layout2 />
-      <div id="gallery" style={{ minHeight: "100vh", height: 'auto', backgroundColor: "white" }}>
+      <div id="gallery" style={{ minHeight: "100vh", height: 'auto', backgroundColor: "white", marginBottom: '10px' }}>
         <Typography variant="h4" sx={{ mt: 15, }}>
           <strong>NASZA GALERIA</strong>
         </Typography>

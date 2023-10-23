@@ -7,25 +7,31 @@ export default function AboutUs() {
   return (
     <div id='aboutUs'>
       <Layout2 />
-      <Box sx={{ position: 'relative', height: '100vh' }}>
-        <img src="/assets/tanos-037.jpg" alt="aboutUs" style={{
-          position: 'absolute',
-          transform: 'translateX(15%)',
-          width: "50%",
-          height: "100%",
-          objectFit: "cover",
-          zIndex: 1,
-        }} />
+      <Box sx={{
+        display: 'flex',
+        flexDirection: {
+          xs: 'column',
+          sm: 'column',
+          md: 'row'
+        },
+        position: 'relative'
+      }}>
+        <Box sx={{
+          flex: 1,
+          display: { xs: 'none', sm: 'none', md: 'flex' },
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundImage: "url('/assets/tanos-037.jpg')",
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }}>
+        </Box>
+
         <Box
           sx={{
-            position: "absolute",
-            left: '50%',
-            transform: 'translateX(-50%)',
-            width: "50%",
-            maxheight: "100%",
-            minHeight: '100%',
+            flex: 1,
             backgroundColor: "rgba(28, 28, 28, 0.9)",
-            zIndex: 3,
             padding: '0rem 3rem 0rem 3rem',
             display: 'flex',
             flexDirection: 'column',
@@ -56,15 +62,18 @@ export default function AboutUs() {
             <br /><br /> <strong>Pozdrawiamy, Paweł Gołębiewski i Maciej Kamiński</strong>
           </Typography>
         </Box>
-        <img src="/assets/tanos-049.jpg" alt="aboutUs" style={{
-          position: 'absolute',
-          left: 0,
-          width: "60%",
-          height: "100%",
-          objectFit: "cover",
-          zIndex: 1,
-        }} />
-      </Box >
-    </div >
+        <Box sx={{
+          flex: 1,
+          display: { xs: 'none', sm: 'none', md: 'flex' },
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundImage: "url('/assets/tanos-049.jpg')",
+          backgroundPosition: 'center',
+          backgroundSize: 'cover',
+          backgroundRepeat: 'no-repeat'
+        }}>
+        </Box>
+      </Box>
+    </div>
   );
 }

@@ -8,7 +8,7 @@ export default function Contact() {
     <>
       <Layout3 />
       <div id="contact">
-        <Box sx={{ padding: 15 }}>
+        <Box sx={{ padding: 10 }}>
           <Grid container spacing={3}>
             <Grid item xs={12} md={5}>
               <ContactForm />
@@ -31,7 +31,12 @@ export default function Contact() {
               </Typography>
             </Grid>
             <Grid item xs={12} md={4}>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.9087180287324!2d21.024957876908175!3d52.35907866141947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ec902d00f4a79%3A0xc92329bb2fd2768!2sTanos%20Motorsport!5e0!3m2!1spl!2spl!4v1697738765249!5m2!1spl!2spl" width="100%" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <div>
+                <iframe
+                  title="Mapa Google"
+                  src="https://www.google.com/maps/embed/v1/view?key=AIzaSyB8WoROze97etvZtXpwTrkd6Eh03osTOCg&center=52.2692,20.9982&zoom=16"
+                  width="100%" height="100%" loading="lazy" allowFullScreen=""></iframe>
+              </div>
             </Grid>
           </Grid>
         </Box>
